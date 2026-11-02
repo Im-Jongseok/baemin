@@ -1,0 +1,20 @@
+/* Exact cropped source pixels; no generated replacements for observed icons. */
+.captured-icon{width:28px;height:28px;object-fit:contain;vertical-align:middle;pointer-events:none;user-select:none;flex-shrink:0}
+.bottom-nav button{padding:3px 0;gap:1px}
+.bottom-nav .captured-nav-icon{width:32px;height:32px;flex-shrink:0;filter:none;opacity:1}
+.bottom-nav button span{font-size:9px;line-height:12px}
+.header-tools .captured-icon,.address-appbar .captured-icon,.store-appbar .captured-icon{width:32px;height:32px}
+.address-appbar>div{gap:8px}
+.address-appbar>div>button{display:flex;align-items:center;justify-content:center}
+.catalog-search>.captured-icon{width:30px;height:30px;margin-right:-4px}
+.original-filters .captured-icon{width:19px;height:19px;margin-left:-2px;margin-right:-2px}
+.food-categories button>span{overflow:hidden}
+.food-categories button>span>img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.food-categories .all-food{transform:none;text-shadow:none}
+.food-categories .selected>span{outline:1px solid #00c5ad;outline-offset:2px;box-shadow:none}
+.market-logos{align-items:flex-end}
+.market-logos .market-source{background:transparent!important;border:0!important;width:59px;height:64px;border-radius:0;transform:none;font-style:normal}
+.market-source>img{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none}
+.profile-block .avatar{width:132px;height:110px;margin-top:6px;margin-bottom:12px}
+.profile-block .avatar img{width:100%;height:100%;object-fit:contain}
+.phone[data-tab="my"] .profile-name{margin-bottom:2px}

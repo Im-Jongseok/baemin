@@ -1,0 +1,213 @@
+/* Comfortable small-screen reading sizes. */
+.bottom-nav button>span{font-size:11px;line-height:14px;letter-spacing:-.45px}
+.market-logos b,.food-categories button>b{font-size:12px;line-height:17px}
+.tile-store,.discovery-card>small,.product-card>small,.product-delivery,.nearby-stores small{font-size:12px;line-height:1.65}
+.discovery-card .tile-price{font-size:17px}.product-name{font-size:14px;line-height:1.6}.market-tabs button{font-size:12px}
+.shop-card p,.shop-card .review-count,.card-top p{font-size:12px;line-height:1.65}.shop-card .pickup-tag{font-size:10px}
+.preview-period,.habit-statistics span,.habit-macro-labels,.preview-next p{font-size:11px;line-height:1.65}
+.habit-statistics{gap:8px}.habit-statistics b{font-size:25px}.habit-statistics b small{font-size:11px}
+.preview-next button{font-size:12px}.habit-scope,.report-footer,.report-chart-note,.nutrition-coverage,.format-note,.order-detail-footnote{font-size:10px;line-height:1.9}
+.help,.day-sheet>.help,.day-benefit p{font-size:11px;line-height:1.8}.day-benefit small{font-size:10px}.day-benefit button{font-size:12px;display:inline-flex;align-items:center;gap:5px}.day-benefit button svg{height:11px;width:11px}
+.report-date b,.period-segments button,.meal-source-labels>span,.nutrient-metrics span,.recipe-top p,.healthy-menu small,.recipe-coupon{font-size:11px}
+.report-next-step>p,.healthy-menu p>span,.report-coupon-reminder p,.report-subcopy,.report-owned-benefits{font-size:12px;line-height:1.8}
+.day-photo-action>span,.meal-bridge small,.source-badge,.wallet-ticket small{font-size:11px}.meal-bridge b,.meal-bridge button{font-size:12px}
+.weekdays{font-size:11px}.view-controls button{font-size:11px}.calendar-caption{font-size:15px}.meal-day .number{font-size:12px;line-height:20px;height:20px;min-width:20px}
+.calendar-day-cell{position:relative;min-width:0;height:94px}.calendar-day-cell>.meal-day{width:100%;height:100%}
+.meal-day .benefit-cell-label{font-size:11px;line-height:15px;bottom:3px}.meal-day .benefit-cell-label.pickup{font-size:9px;letter-spacing:-.4px}.meal-day .benefit-cell-label.coupon{display:none}
+.meal-day .benefit-art{top:27px;height:45px;width:44px}.meal-day .benefit-cell-label.coupon+.benefit-art{top:28px}
+.meal-benefit-trigger{position:absolute;right:3px;bottom:5px;z-index:4;width:23px;height:23px;display:grid;place-items:center;background:linear-gradient(135deg,#fff1b9,#f9cd61);border:1px solid #e8b74e;border-radius:50%;font-size:11px;font-weight:800;color:#9b6e16;box-shadow:0 2px 5px #0002;padding:0}
+.meal-benefit-trigger.coupon{background:#e8ddff;border-color:#cab2f5;color:#7649b6}.meal-benefit-trigger:active{transform:scale(.88)}
+.meal-day[data-benefit]{transition:transform .18s,box-shadow .18s}.meal-day[data-benefit]:active{transform:scale(.95);box-shadow:0 0 0 3px #00cab329}
+/* Floating refractive layers and one sliding selected tab. */
+.bottom-nav{height:72px;padding:5px 7px;isolation:isolate;overflow:hidden;background:linear-gradient(145deg,#ffffffb8,#ffffff6e 46%,#eef4f496);border:1px solid #fffffff0;border-bottom-color:#cbd5d085;backdrop-filter:blur(24px) saturate(190%);-webkit-backdrop-filter:blur(24px) saturate(190%);box-shadow:inset 0 1px 1px #fff,inset 0 -1px 3px #ffffff7d,0 10px 28px #192d3620,0 2px 6px #1f374814;gap:0}
+.bottom-nav:before{content:'';position:absolute;left:7px;top:5px;bottom:5px;width:calc((100% - 14px)/5);transform:translateX(calc(var(--active-index,0)*100%));border-radius:40px;background:linear-gradient(145deg,#ffffffa6,#dce3e579 65%,#ffffff8c);border:1px solid #ffffffe0;box-shadow:inset 0 1px 3px #fff,inset 0 -2px 6px #859d9f0d,0 2px 6px #18382e0a;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);z-index:0;transition:transform .48s cubic-bezier(.22,1.18,.34,1)}
+.bottom-nav:after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;border-radius:inherit;box-shadow:inset 0 1px 1px #fff,inset 1px 0 1px #fff9,inset -1px 0 2px #fff9;background:radial-gradient(ellipse at 10% 0%,#fff7,transparent 40%),linear-gradient(170deg,transparent 62%,#ffffff20)}
+.bottom-nav>button,.bottom-nav>button.active{height:60px;position:relative;z-index:1;background:transparent;color:#141d22;gap:4px;border-radius:32px;transition:transform .2s,color .2s;box-shadow:none;text-shadow:0 1px 2px #fff7}
+.bottom-nav>button:active{transform:scale(.92)}.bottom-nav .captured-nav-icon{transition:transform .3s cubic-bezier(.2,1.4,.4,1);filter:drop-shadow(0 1px 1px #ffffff90)}.bottom-nav>button.active .captured-nav-icon{transform:translateY(-1px)}
+@supports not (backdrop-filter:blur(1px)){.bottom-nav{background:#fffffff5}.bottom-nav:before{background:#e9eeee}}
+/* A compact coupon banner follows store discovery, as in the app reference. */
+.shopping-home>.market-logos{padding-top:19px;padding-bottom:20px;background:#fff}
+.shopping-benefit-banner{width:calc(100% - 32px);margin:0 16px 18px;border:1px solid #d9edf4;border-radius:13px;background:linear-gradient(110deg,#e4f6ff,#d7f2ff 60%,#edfaff);min-height:141px;display:flex;align-items:center;gap:19px;padding:18px 19px;text-align:left;overflow:hidden;position:relative}
+.shopping-banner-art{width:76px;flex-shrink:0;display:grid;place-items:center;position:relative}.shopping-banner-art:before{content:'';width:84px;height:84px;background:#fff8;border-radius:50%;position:absolute;filter:blur(3px)}
+.shopping-banner-art img{width:71px;height:82px;object-fit:contain;position:relative;transform:rotate(-8deg);filter:drop-shadow(0 6px 4px #727aad16)}
+.shopping-banner-copy{display:flex;flex-direction:column;position:relative;z-index:1}.shopping-banner-copy>small{font-size:11px;color:#4e8597;font-weight:650;line-height:1.5}.shopping-banner-copy>strong{font-size:22px;letter-spacing:-.8px;line-height:1.35;color:#234e63;margin:7px 0 11px;font-weight:800}.shopping-banner-copy>span{display:flex;align-items:center;gap:5px;font-size:12px;color:#4e8ca3;font-weight:650}.shopping-banner-copy svg{width:11px;height:11px}
+/* A fixed benefit is revealed with a short celebratory animation. */
+dialog.benefit-dialog{width:390px;max-width:calc(100vw - 36px);border-radius:25px;border:1px solid #ffffffd9;box-shadow:0 24px 80px #071f2940;background:#fff;overflow:auto;max-height:calc(100dvh - 50px)}
+.benefit-dialog .dialog-head{padding:18px 20px 12px;border:0;background:#fff;position:relative;z-index:5}.benefit-dialog .dialog-head h2{font-size:16px;letter-spacing:-.4px;font-weight:750}.benefit-dialog .dialog-head .close{font-size:24px;width:25px;height:25px;line-height:24px;padding:0;color:#8e9b9e}
+.benefit-dialog .dialog-body{padding:0 23px 22px}.benefit-reveal{text-align:center;position:relative}.reward-stage{height:172px;position:relative;display:grid;place-items:center;isolation:isolate;margin:0 -12px 4px;overflow:hidden}
+.reward-glow{width:156px;height:156px;border-radius:50%;background:radial-gradient(circle,#e1fff4,#f0fff9 54%,#ffffff00 72%);position:absolute;animation:reward-glow .8s ease-out both}
+.benefit-reveal.points .reward-glow{background:radial-gradient(circle,#fff2b2,#fff8e2 54%,#fff0 72%)}.benefit-reveal.coupon .reward-glow{background:radial-gradient(circle,#e9daff,#f7efff 54%,#fff0 72%)}
+.reward-ring{width:90px;height:90px;position:absolute;border:2px solid #6fe2c7;border-radius:50%;opacity:0;animation:reward-ring 1.15s .15s ease-out both}
+.reward-prize{width:98px;height:114px;object-fit:contain;position:relative;z-index:2;filter:drop-shadow(0 9px 8px #315a3820);animation:reward-pop .8s cubic-bezier(.17,.76,.3,1.12) both}
+.reward-confetti{position:absolute;width:6px;height:11px;border-radius:2px;background:#00c7a6;left:calc(50% - 3px);top:calc(50% - 5px);transform:rotate(var(--angle)) translateY(-35px);opacity:0;z-index:1;animation:reward-confetti 1.15s var(--delay) cubic-bezier(.18,.7,.3,1) both}
+.reward-confetti:nth-of-type(3n){background:#ffce52;width:7px;height:7px;border-radius:50%}.reward-confetti:nth-of-type(3n + 1){background:#a78ae8}.reward-confetti:nth-of-type(4n){background:#80d5ee;width:4px;height:10px}
+.reward-kicker{font-size:12px;font-weight:650;color:#0ba38b;line-height:1.6;margin:0 0 8px;animation:reward-copy .5s .2s both}
+.benefit-reveal h3{font-size:25px;line-height:1.4;letter-spacing:-1px;font-weight:800;margin:0 0 13px;animation:reward-copy .5s .25s both}.benefit-reveal h3 strong{color:#009f86;font-size:31px;letter-spacing:-.8px}.benefit-reveal.points h3 strong{color:#c98e19}.benefit-reveal.coupon h3{font-size:24px}
+.reward-date{display:inline-block;padding:6px 11px;border-radius:20px;background:#f1f5f3;font-size:12px;color:#82918b;font-weight:500;animation:reward-copy .5s .3s both}
+.reward-conditions{text-align:left;background:#f7f8f9;border:1px solid #eef0f2;border-radius:12px;padding:15px;margin:20px 0 17px;animation:reward-copy .5s .35s both}.reward-conditions>b{font-size:12px;color:#414d4d;font-weight:700}.reward-conditions p{font-size:12px;color:#909a9b;line-height:1.8;margin:7px 0 0;word-break:keep-all}
+.reward-order-button{width:100%;display:flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;background:var(--mint);color:#083f36;min-height:50px;font-size:16px;font-weight:750;padding:14px;animation:reward-copy .5s .4s both;box-shadow:0 4px 10px #00c9aa19}.reward-order-button svg{width:13px;height:13px}.reward-order-button:active{transform:scale(.98)}
+.reward-food-link{font-size:12px;color:#859995;margin-top:16px;padding:3px 8px}.reward-demo-note{font-size:10px;line-height:1.8;color:#b0b7b4;margin:15px 0 0}
+@keyframes reward-pop{0%{transform:scale(.3) rotate(-18deg);opacity:0}45%{transform:scale(1.12) rotate(7deg);opacity:1}70%{transform:scale(.95) rotate(-3deg)}100%{transform:scale(1) rotate(0);opacity:1}}
+@keyframes reward-ring{0%{transform:scale(.55);opacity:.7}100%{transform:scale(1.75);opacity:0}}
+@keyframes reward-glow{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes reward-confetti{0%{opacity:0;transform:rotate(var(--angle)) translateY(-26px) rotate(0) scale(.6)}25%{opacity:1}100%{opacity:0;transform:rotate(var(--angle)) translateY(-91px) rotate(120deg) scale(.8)}}
+@keyframes reward-copy{from{transform:translateY(7px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media(max-width:400px){.calendar-day-cell{height:86px}.meal-day .benefit-cell-label{font-size:10px}.meal-day .benefit-cell-label.pickup{font-size:8px}.meal-day .number{font-size:11px}.meal-day .benefit-art{height:41px;width:40px;top:25px}.habit-statistics span{font-size:10px}.habit-statistics b{font-size:23px}.market-logos b,.food-categories button>b{font-size:11px}.bottom-nav button>span{font-size:10px}.shopping-benefit-banner{gap:13px;padding:17px 14px;min-height:133px}.shopping-banner-art{width:65px}.shopping-banner-art img{width:62px;height:74px}.shopping-banner-copy>strong{font-size:21px}.shopping-banner-copy>span{font-size:11px}.benefit-dialog .dialog-body{padding:0 20px 20px}.reward-stage{height:150px}.reward-prize{height:101px;width:90px}.benefit-reveal h3{font-size:23px}.reward-conditions{margin-top:17px;padding:13px}}
+@media(prefers-reduced-motion:reduce){.bottom-nav:before,.bottom-nav>button,.bottom-nav .captured-nav-icon,.meal-day[data-benefit]{transition:none}.reward-prize,.reward-glow,.reward-kicker,.benefit-reveal h3,.reward-date,.reward-conditions,.reward-order-button{animation:none!important}.reward-confetti,.reward-ring{display:none}.meal-day[data-benefit]:active,.bottom-nav>button:active{transform:none}}
+/* Calendar and report share the selected period; one clear next-meal hook. */
+.report-selected-period{font-size:12px;font-weight:650;color:#6a9487;margin:0 0 19px;line-height:1.7}
+.report-preview .habit-statistics{margin-bottom:20px}.report-preview .preview-period{color:#8f9d96;font-size:12px}
+.report-hook{display:flex;align-items:center;gap:15px;width:100%;padding:17px 16px;margin:2px 0 1px;background:linear-gradient(115deg,#dff8ef,#eafbf7 65%,#eff9ff);border:1px solid #c7eade;border-radius:13px;text-align:left;box-shadow:0 6px 15px #26b69b0b;transition:transform .18s}
+.report-hook:active{transform:scale(.985)}.report-hook-art{display:grid;place-items:center;width:59px;height:74px;flex-shrink:0}.report-hook-art img{width:55px;height:68px;object-fit:contain;transform:rotate(-7deg);filter:drop-shadow(0 5px 4px #7e6cc317)}
+.report-hook-copy{min-width:0;flex:1;display:flex;flex-direction:column}.report-hook-copy>small{font-size:11px;line-height:1.6;color:#479b87;font-weight:650}.report-hook-copy>strong{font-size:19px;line-height:1.5;letter-spacing:-.7px;color:#204a3f;margin:5px 0 10px;font-weight:800}.report-hook-copy em{font-style:normal;color:#008e75;font-size:21px}.report-hook-copy>span{font-size:12px;color:#2a9c80;font-weight:750;display:flex;align-items:center;gap:7px}.report-hook-copy svg{width:12px;height:12px}
+.day-empty-state{padding:12px 0 5px;text-align:center}.empty-meal-icon{height:52px;width:52px;border-radius:17px;background:#eef9f4;color:#8bbcad;display:grid;place-items:center;margin:0 auto 18px}.empty-meal-icon svg{width:25px;height:25px;stroke-width:1.6}.day-empty-state h3{font-size:18px;font-weight:750;line-height:1.6;letter-spacing:-.6px;margin:0 0 9px}.day-empty-state p{font-size:12px;line-height:1.8;color:#949fa0;margin:0 0 6px}.day-empty-state+.day-photo-action{margin-top:21px;margin-bottom:5px}
+@media(max-width:400px){.report-hook{gap:10px;padding:15px 13px}.report-hook-art{width:45px}.report-hook-art img{width:44px;height:59px}.report-hook-copy>strong{font-size:17px;letter-spacing:-.6px}.report-hook-copy em{font-size:19px}.report-hook-copy>small{font-size:10px}.report-hook-copy>span{font-size:11px}.day-empty-state h3{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.report-hook{transition:none}.report-hook:active{transform:none}}
+/* Meal-pattern evidence leads to a concrete next meal, with coupons secondary. */
+.report-preview .habit-statistics{margin-top:14px;margin-bottom:19px}
+.report-food-hook{display:block;width:100%;text-align:left;padding:15px 15px 13px;border:1px solid #e8ddc3;border-radius:14px;background:linear-gradient(130deg,#fff9eb,#fffdf7);transition:transform .18s}
+.report-food-hook:active{transform:scale(.985)}.report-food-hook.positive{border-color:#c5e9dc;background:linear-gradient(130deg,#e7f8ee,#f4fcf8)}.report-food-hook.neutral{border-color:#dce9e8;background:linear-gradient(130deg,#edf8f5,#f6fbfc)}
+.food-pattern-label{display:inline-block;font-size:10px;line-height:18px;padding:2px 7px;background:#f3e5bd;color:#9c7426;border-radius:5px;font-weight:700;letter-spacing:-.2px}.positive .food-pattern-label{background:#cfeedd;color:#318365}.neutral .food-pattern-label{background:#dcefe8;color:#4c8c75}
+.food-hook-main{display:flex;gap:11px;align-items:center;margin-top:12px}.food-hook-copy{flex:1;min-width:0;display:flex;flex-direction:column}.food-hook-copy>strong{font-size:19px;line-height:1.45;letter-spacing:-.7px;font-weight:800;color:#3e3a2d}.positive .food-hook-copy>strong,.neutral .food-hook-copy>strong{color:#274e40}.food-hook-copy>span{font-size:11px;color:#9a917d;line-height:1.8;margin-top:8px;word-break:keep-all}.positive .food-hook-copy>span,.neutral .food-hook-copy>span{color:#8c9e95}
+.report-food-hook .suggestion-food{width:75px;height:75px;border-radius:18px;flex-shrink:0;box-shadow:0 4px 10px #543a1712;object-fit:cover}
+.food-hook-footer{border-top:1px solid #e9dfc966;display:flex;align-items:center;justify-content:space-between;gap:9px;margin-top:15px;padding-top:12px}.food-hook-footer>span:first-child{min-width:0;display:flex;flex-direction:column}.food-hook-footer b{font-size:13px;color:#62563b;line-height:1.6;font-weight:700}.food-hook-footer small{font-size:10px;line-height:1.7;color:#a39474;margin-top:2px}.positive .food-hook-footer b,.neutral .food-hook-footer b{color:#437860}.positive .food-hook-footer small,.neutral .food-hook-footer small{color:#91a99b}.food-hook-arrow{height:30px;width:30px;background:#fff9;border:1px solid #e9dfc1;border-radius:50%;display:grid;place-items:center;flex-shrink:0;color:#a28a4c}.food-hook-arrow svg{height:12px;width:12px}.positive .food-hook-arrow,.neutral .food-hook-arrow{border-color:#cde5d9;color:#5c9e80}
+/* The day's calorie summary has its own visual hierarchy and food drill-down. */
+.daily-total.daily-meal-summary{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:18px 19px 15px;text-align:left;border:1px solid #bfe7d9;border-radius:17px;background:linear-gradient(115deg,#dff8ed,#f0fcf8);color:#376c5b;box-shadow:0 4px 13px #24896c08;transition:transform .18s}
+.daily-meal-summary:active{transform:scale(.99)}.daily-summary-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.daily-summary-top>span{font-size:13px;font-weight:700;color:#347861}.daily-summary-top>b{font-size:12px;border-radius:15px;background:#fff9;border:1px solid #c6e9dc;padding:3px 10px;color:#31866b;font-weight:750}
+.daily-meal-summary .daily-energy-heading{display:block;font-size:11px;color:#75a390;margin-bottom:3px}.daily-meal-summary .daily-energy-value{display:block;font-size:35px;line-height:1.35;font-weight:800;letter-spacing:-1px;color:#145e46;font-variant-numeric:tabular-nums}.daily-energy-value>small{font-size:13px;font-weight:500;letter-spacing:0;color:#5c9b83}
+.daily-summary-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:13px;padding-top:12px;border-top:1px solid #bddfce99}.daily-meal-photos{display:flex;align-items:center;padding-left:4px}.daily-meal-photos .food-thumb{height:31px;width:31px;border:2px solid #f2fff9;border-radius:50%;margin-left:-4px;box-shadow:0 1px 4px #2c624b10;object-fit:cover}.daily-meal-photos i{font-style:normal;font-size:9px;font-weight:700;height:29px;width:29px;border:2px solid #f2fff9;border-radius:50%;margin-left:-4px;background:#bfe8d5;color:#3b8566;display:grid;place-items:center}.daily-summary-bottom>span:last-child{font-size:11px;font-weight:650;color:#4c997b;display:flex;align-items:center;gap:7px}.daily-summary-bottom svg{width:11px;height:11px}
+@media(max-width:400px){.report-food-hook{padding:14px 13px}.food-hook-copy>strong{font-size:17px}.food-hook-copy>span{font-size:10px}.report-food-hook .suggestion-food{width:65px;height:65px;border-radius:15px}.food-hook-footer small{font-size:9px}.daily-total.daily-meal-summary{padding:16px}.daily-meal-summary .daily-energy-value{font-size:33px}}
+@media(prefers-reduced-motion:reduce){.report-food-hook,.daily-total.daily-meal-summary{transition:none}.report-food-hook:active,.daily-meal-summary:active{transform:none}}
+/* Swipeable next-meal choices share the selected report period. */
+.suggestion-carousel{min-width:0}.suggestion-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;border-radius:14px}.suggestion-rail::-webkit-scrollbar{display:none}.suggestion-slide{flex:0 0 100%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always;display:flex;padding:1px}.suggestion-slide .report-food-hook{height:100%;min-height:223px}.suggestion-controls{display:flex;justify-content:space-between;align-items:center;gap:7px;padding:11px 1px 0}.suggestion-controls>span{font-size:11px;color:#8b9398;line-height:1.5}.suggestion-controls>div{display:flex;align-items:center;gap:4px;flex-shrink:0}.suggestion-controls button{width:29px;height:29px;border:1px solid #e7ebec;border-radius:50%;font-size:21px;color:#52666a;display:grid;place-items:center;padding:0;line-height:1;background:#fff}.suggestion-controls button:disabled{opacity:.3}.suggestion-position{font-size:11px;font-weight:650;font-variant-numeric:tabular-nums;color:#747e82;min-width:35px;text-align:center}.report-food-hook.fresh{border-color:#bfe6df;background:linear-gradient(130deg,#e3f8f1,#f5fcfc)}.fresh .food-pattern-label{background:#c9eee3;color:#26846e}.fresh .food-hook-copy>strong{color:#20584b}.fresh .food-hook-copy>span,.fresh .food-hook-footer small{color:#72968b}.fresh .food-hook-footer b{color:#3b7866}.report-food-hook.picnic{border-color:#ded9ee;background:linear-gradient(130deg,#f1edfc,#fcfaff)}.picnic .food-pattern-label{background:#e3daf7;color:#8263ac}.picnic .food-hook-copy>strong{color:#574473}.picnic .food-hook-copy>span,.picnic .food-hook-footer small{color:#9989ad}.picnic .food-hook-footer b{color:#7a619b}
+@media(max-width:400px){.suggestion-slide .report-food-hook{min-height:218px}.suggestion-controls>span{font-size:10px}}
+/* Personal suggestions explain the observation before the next-meal action. */
+.personal-suggestions-heading{font-size:13px;font-weight:750;color:#343f3c;margin:0 0 12px;letter-spacing:-.3px}.personalized-hook .food-hook-main{align-items:flex-start}.personalized-hook .food-hook-copy>strong{font-size:19px;line-height:1.5;word-break:keep-all}.personalized-hook .suggestion-food{width:66px;height:66px;margin-top:2px}.personal-record-evidence{display:flex;flex-direction:column;gap:5px;margin-top:15px;padding:12px;border:1px solid #ffffffb3;border-radius:10px;background:#ffffffa8;line-height:1.75;color:#68634f;font-size:12px;word-break:keep-all}.personal-record-evidence>b{font-size:10px;font-weight:700;color:#9b895e}.personal-reason{display:block;font-size:12px;line-height:1.85;color:#847a60;margin:10px 1px 0;word-break:keep-all}.fresh .personal-record-evidence{color:#3c7063}.fresh .personal-reason{color:#688b7f}.positive .personal-record-evidence,.neutral .personal-record-evidence{color:#456e5b}.positive .personal-reason,.neutral .personal-reason{color:#748d7e}.picnic .personal-record-evidence{color:#725e8b}.picnic .personal-reason{color:#9581aa}.personalized-hook .food-hook-footer small{font-size:11px;line-height:1.8}.suggestion-controls[hidden]{display:none}.suggestion-record-icon{display:grid;place-items:center;flex:0 0 54px;width:54px;height:54px;background:#d1eee5;border-radius:17px;color:#289780}.suggestion-record-icon svg{width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:1.7}
+@media(max-width:400px){.personalized-hook .food-hook-copy>strong{font-size:17px}.personalized-hook .suggestion-food{width:54px;height:54px}.personal-record-evidence,.personal-reason{font-size:12px}.personalized-hook .food-hook-footer small{font-size:10px}}
+.club-report-access{display:flex;align-items:center;gap:7px;width:100%;padding:10px 0 12px;text-align:left;color:#69746e;font-size:11px;line-height:1.6}.club-report-tag{display:inline-block;flex-shrink:0;background:#222;color:white;font-size:9px;font-weight:750;padding:2px 5px;border-radius:3px;letter-spacing:-.2px}.club-report-access svg{margin-left:auto;width:12px;height:12px;color:#919993}.club-report-gate{padding:4px 0 6px}.page>.club-report-gate{background:white;padding:28px 20px;margin:15px;border-radius:16px}.club-gate-badge{display:inline-block;background:#202524;color:#fff;font-size:11px;font-weight:750;padding:5px 9px;transform:skew(-4deg)}.club-report-gate h3{font-size:23px;line-height:1.5;letter-spacing:-1px;margin:17px 0 13px;color:#202625}.club-report-gate p{font-size:13px;line-height:1.95;color:#7d8b84;margin:0 0 16px;word-break:keep-all}.club-report-gate ul{list-style:none;margin:0 0 22px;padding:14px;background:#f1faf6;border-radius:10px}.club-report-gate li{font-size:12px;line-height:1.8;color:#4a7864;margin:7px 0;padding-left:18px;position:relative}.club-report-gate li:before{content:'✓';position:absolute;left:0;color:#00ad90;font-weight:800}.club-report-gate .primary{font-size:13px}.club-report-gate .secondary{margin-top:8px}.suggestion-context-note{font-size:11px;line-height:1.85;color:#94a198;margin:11px 1px 2px;word-break:keep-all}.meal-day .benefit-cell-label.pickup{font-size:10px;letter-spacing:-.2px}
+@media(max-width:400px){.club-report-access{font-size:10px}.club-report-gate h3{font-size:21px}.meal-day .benefit-cell-label.pickup{font-size:9px}}
+/* Evidence is the main reason for a personal recommendation. */
+.personalized-hook .personal-record-evidence{background:#fff;border:1px solid #d9e7dd;border-left:3px solid #00b99c;border-radius:11px;padding:15px;margin-top:16px;gap:9px;color:#263d31}.personalized-hook .personal-record-evidence>b{font-size:11px;color:#72917e}.personal-record-stat{display:flex;align-items:center;gap:13px}.personal-record-stat>strong{font-size:35px;line-height:1.1;letter-spacing:-1.1px;font-weight:850;color:#173d2c;white-space:nowrap}.personal-record-stat>strong>small{font-size:15px;margin-left:3px;font-weight:650;letter-spacing:0}.personal-record-stat>span{font-size:12px;font-weight:650;color:#4c725d;line-height:1.6;word-break:keep-all}.personalized-hook .personal-evidence-sentence{font-size:14px;line-height:1.8;font-weight:650;color:#304c3b}.personalized-hook .personal-reason{font-size:13px;line-height:1.9;color:#738773}.personalized-hook .food-pattern-label{font-size:11px}
+/* Keep sprite tiles square inside wide photo windows; crop instead of stretching. */
+.store-cover-photo{height:175px;overflow:hidden;position:relative;background:#f4f1eb}.menu-detail-photo{position:relative}.store-cover-photo>span.food-thumb.food-sprite,.menu-detail-photo>span.food-thumb.food-sprite{position:absolute;left:0;top:50%;right:auto;bottom:auto;width:100%;height:auto;aspect-ratio:1;max-width:none;transform:translateY(-50%);border-radius:0}.store-cover-photo>img.food-thumb,.menu-detail-photo>img.food-thumb{width:100%;height:100%;object-fit:cover;border-radius:0;display:block}
+/* Owned coupon ticket follows the app's mint amount + white ticket layout. */
+button.menu-owned-coupon.menu-coupon-ticket{display:flex;align-items:stretch;width:100%;background:#fff;border:1px solid #dfe8e4;border-radius:11px;padding:0;text-align:left;margin:0 0 21px;color:#202625;overflow:hidden;box-shadow:0 3px 9px #183c2704}.menu-coupon-value{flex:1;min-width:0;padding:15px 14px;display:flex;flex-direction:column;gap:6px}.menu-coupon-value>small{display:inline-block;align-self:flex-start;margin:0;font-size:10px;background:#f0f4f2;color:#668574;line-height:1.5;padding:2px 5px;border-radius:3px}.menu-coupon-value>strong{font-size:22px;font-weight:800;color:#00a990;line-height:1.4;letter-spacing:-.7px}.menu-coupon-value>span{font-size:11px;color:#99a69e;line-height:1.6}.menu-coupon-apply{width:79px;border-left:1px dashed #cdded4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;position:relative;background:#fbfdfc;color:#00a58b;flex-shrink:0}.menu-coupon-apply>b{width:25px;height:25px;border-radius:50%;background:#e2f7ef;display:grid;place-items:center;font-size:20px;line-height:1;font-weight:600}.menu-coupon-apply>span{font-size:11px;font-weight:700}.menu-coupon-ticket.selected{border-color:#9ddac7}.menu-coupon-ticket.selected .menu-coupon-apply{background:#eaf9f2}.menu-coupon-ticket.selected .menu-coupon-apply>b{background:#00b99c;color:#fff;font-size:15px}.menu-coupon-ticket:active{transform:scale(.99)}
+@media(max-width:400px){.personalized-hook .personal-evidence-sentence{font-size:13px}.personal-record-stat>strong{font-size:32px}.personalized-hook .personal-reason{font-size:12px}.menu-coupon-value>strong{font-size:20px}.menu-coupon-apply{width:70px}.menu-coupon-value{padding:13px 11px}}
+.nutrition-record-scope{font-size:11px;line-height:1.7;color:#8f9d94;margin:-9px 0 20px}.personalized-hook.positive .personal-record-evidence{border-left-color:#00b99c}.personalized-hook.positive .personal-record-stat>strong{color:#14765a}
+/* Coupons use a vivid purple accent distinct from the app's mint actions. */
+.health-report .report-owned-benefits.personal-coupon-hook{background:linear-gradient(125deg,#5b20dc,#813cff);border-color:#6c2be8;color:#fff;box-shadow:0 8px 20px #6b28df28}.personal-coupon-hook .coupon-hook-copy>small{color:#ecddff}.personal-coupon-hook .coupon-hook-copy>strong,.personal-coupon-hook .coupon-hook-copy em{color:#fff}.personal-coupon-hook .coupon-hook-copy>span{color:#e8d7ff}.personal-coupon-hook .coupon-hook-copy>b{color:#fff;background:#ffffff24;border:1px solid #ffffff45;border-radius:7px;align-self:flex-start;padding:7px 9px}.personal-coupon-hook>img{background:#fffffff2;border-radius:16px;padding:5px;filter:drop-shadow(0 5px 9px #32116c30)}
+.health-report .coupon-wallet-panel{border-color:#d6bfff;background:#fbf8ff;box-shadow:0 5px 17px #6b28df0b}.coupon-wallet-title>span{color:#7026df}.report-wallet-tickets>button{border-color:#d6bfff;background:#fff;box-shadow:0 2px 6px #6b28df08}.report-wallet-tickets .wallet-ticket-mark{background:#7125e8;color:#fff}.report-wallet-tickets strong{color:#6b20df;font-size:20px;font-weight:800}.report-wallet-tickets b{color:#715b8f}.report-wallet-tickets small{color:#9a88b0}.report-wallet-tickets svg{color:#8c57d5}.health-report .coupon-wallet-panel>.coupon-wallet-all{background:#7229e7;border-color:#7229e7;color:#fff}
+button.menu-owned-coupon.menu-coupon-ticket{border-color:#c7a5ff;background:#fcfaff;box-shadow:0 4px 12px #6b28df12}.menu-coupon-ticket .menu-coupon-value>small{background:#ede1ff;color:#7836cf;font-weight:700}.menu-coupon-ticket .menu-coupon-value>strong{color:#7023e5;font-weight:850}.menu-coupon-ticket .menu-coupon-value>span{color:#9c86b1}.menu-coupon-ticket .menu-coupon-apply{border-color:#ccb0f5;background:#f2e9ff;color:#7225df}.menu-coupon-ticket .menu-coupon-apply>b{background:#7429e7;color:#fff}.menu-coupon-ticket.selected{border-color:#823dec;background:#f8f1ff;box-shadow:0 0 0 1px #a77bf329}.menu-coupon-ticket.selected .menu-coupon-apply{background:#7225df;color:#fff}.menu-coupon-ticket.selected .menu-coupon-apply>b{background:#ffffff25;color:#fff}
+.wallet-ticket:not(.unavailable){border-color:#c9a6ff;background:#f8f1ff;box-shadow:0 3px 11px #6b28df0d}.wallet-ticket:not(.unavailable)>div>span{color:#9866cd}.wallet-ticket:not(.unavailable) b{color:#6d20de;font-weight:800}.wallet-ticket:not(.unavailable) p{color:#8f70af}.wallet-ticket:not(.unavailable) small{color:#a18cb5}.wallet-ticket:not(.unavailable)>button{border-color:#d8bff6;color:#7024df;font-weight:750}.wallet .coupon-preview{background:linear-gradient(120deg,#6522df,#8745ee);color:#fff}.wallet .coupon-preview span{color:#eadcff}.cart-coupon-field{background:#f9f5ff;border-radius:10px;padding:13px!important;border-bottom:0!important}.cart-coupon-field select{border-color:#d9c1fa;color:#6928bd}.cart-coupon-field small{color:#9476b2}.checkout-summary .coupon-discount,.checkout-summary .coupon-discount b,.recipe-basket-summary>.recipe-basket-discount,.recipe-basket-summary>.recipe-basket-discount>b,.recipe-coupon{color:#7628e3;font-weight:700}
+/* Baemin's own brand is a grocery route beneath the nutrient guidance. */
+.baemin-easy-section{padding:23px 17px;background:#fff;border-top:10px solid #f4f5f7}.easy-brand-row{display:flex;align-items:center;gap:7px}.easy-brand{font-size:14px;letter-spacing:-.5px;font-weight:850;color:#202625;background:#e4f7ef;border-radius:5px;padding:4px 7px}.easy-brand-row>span:nth-child(2){font-size:10px;font-weight:650;color:#75a18c}.easy-brand-row>button{margin-left:auto;display:flex;align-items:center;gap:3px;font-size:11px;color:#889a8f;padding:0}.easy-brand-row svg,.easy-browse svg{width:11px;height:11px}.baemin-easy-section>h3{font-size:21px;line-height:1.5;letter-spacing:-.8px;color:#202625;margin:15px 0 8px}.baemin-easy-section>p{font-size:12px;line-height:1.9;color:#849589;margin:0 0 18px;word-break:keep-all}.easy-product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.easy-product{min-width:0;border:1px solid #e5ece7;border-radius:12px;padding:10px;background:white}.easy-product-main{width:100%;display:flex;flex-direction:column;align-items:stretch;gap:5px;text-align:left;padding:0;min-width:0}.easy-product-main>.food-thumb{width:100%;height:auto;aspect-ratio:1;display:block;border-radius:9px;object-fit:cover}.easy-product-kind{align-self:flex-start;font-size:10px;color:#008c73;background:#eaf8f2;line-height:1.6;padding:2px 5px;border-radius:4px;margin:4px 0}.easy-product-main>b{font-size:13px;color:#314c3c;font-weight:650;line-height:1.65;word-break:keep-all}.easy-product-main>small{font-size:11px;color:#95a195;line-height:1.6}.easy-product-main>strong{font-size:17px;color:#202625;margin-top:3px;font-weight:800}.easy-product-add{width:100%;border:1px solid #c4e9d8;border-radius:7px;padding:9px 4px;background:#f5fcf8;color:#008d72;font-size:12px;font-weight:700;margin-top:12px}.easy-browse{margin-top:17px;padding:13px;width:100%;display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;font-weight:650;color:#287d60;background:#edf9f2;border-radius:9px}.baemin-easy-section.compact{margin-top:20px;padding:17px 0 5px;border-top:1px solid #edf1ef}.baemin-easy-section.compact>h3{font-size:18px}.baemin-easy-section.compact .easy-product{padding:8px}.baemin-easy-section.compact .easy-product-main>b{font-size:12px}.baemin-easy-section.compact .easy-product-grid{gap:9px}.health-report>.baemin-easy-section{margin-top:15px}.shopping-home>.baemin-easy-section{margin-bottom:10px;border-top:0}
+/* Actual observed packaging stays square; the product rail mirrors Bmart discovery. */
+.easy-product-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(150px,44%);overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;padding-bottom:3px}.easy-product-grid::-webkit-scrollbar{display:none}.easy-product{scroll-snap-align:start}.easy-product-main>strong em,.product-sale{font-style:normal;color:#f3545b;font-weight:800}.easy-product-main>strong del,.product-original-price{font-size:10px;font-weight:450;color:#aeb4af;margin-left:5px;letter-spacing:-.3px}.baemin-easy-section.compact .easy-product-grid{grid-auto-columns:minmax(143px,46%)}
+
+/* Quiet surfaces let the nutrient value and status carry the color emphasis. */
+.report-food-hook.personalized-hook{background:#fcfdfd;border-color:#dfe5e5;box-shadow:0 2px 8px #182b2510}
+.personalized-hook .food-pattern-label{background:#e9f5f1;color:#176d59;font-size:12px;line-height:1.6;padding:3px 8px}
+.personalized-hook .food-hook-copy>strong{color:#20282b;font-size:19px;line-height:1.5}
+.personalized-hook .suggestion-food{box-shadow:0 2px 7px #182b2510}
+.personalized-hook .personal-record-evidence{background:#f3f6f5;border-color:#e1e7e4;border-left:2px solid #3a9e88;padding:14px;gap:10px}
+.personalized-hook .personal-record-evidence>b{color:#56645e;font-size:12px;font-weight:650}
+.personalized-hook .personal-record-stat>strong{color:#087a64}
+.personalized-hook .personal-record-stat>span{color:#46534f;font-size:13px;line-height:1.6}
+.personalized-hook .personal-evidence-sentence{color:#303a36;font-size:14px;line-height:1.75;font-weight:550}
+.personalized-hook .personal-reason{color:#4d5954;font-size:14px;line-height:1.8;margin-top:13px}
+.personalized-hook .food-hook-footer{border-top-color:#e3e8e6;margin-top:17px;padding-top:13px}
+.personalized-hook .food-hook-footer b{color:#26342e;font-size:14px}
+.personalized-hook .food-hook-footer small{color:#53615b;font-size:12px;line-height:1.7}
+.personalized-hook .food-hook-arrow{color:#176d59;border-color:#d6e2dc;background:#fff}
+.report-food-hook.personalized-hook:focus-visible{outline:2px solid #087a64;outline-offset:2px}
+
+/* Keep purchase actions on the same baseline despite title wrapping or sale prices. */
+.easy-product{display:flex;flex-direction:column;align-self:stretch}.easy-product-main{flex:1}.easy-product-main>b{min-height:3.3em}.easy-product-main>strong{margin-top:auto;padding-top:3px;line-height:1.5;min-height:2.8em}.easy-product-main>strong del{display:block;margin-left:0;line-height:1.5}.easy-product-add{flex-shrink:0;min-height:38px}.report-related-products:empty{display:none}
+
+/* Shared primary text accents; deeper mint on light surfaces keeps small text legible. */
+:root{--primary-text:#007f72;--primary-text-on-dark:#b9fff4}
+.personalized-hook:is(.positive,.fresh,.neutral,.picnic,.change) .food-pattern-label,
+.personalized-hook:is(.positive,.fresh,.neutral,.picnic,.change) .personal-record-stat>strong,
+.personalized-hook .food-hook-arrow,
+.report-kicker,.insight-label>span,.pattern-insight .insight-label>span,
+.pattern-insight .insight-evidence,.unconfirmed-meals button,
+.health-report .insight-actions button,
+.habit-statistics b,.calorie-total>strong,.nutrient-metrics b,
+.recommend-step,.recommend-route,.recommend-primary,.recipe-details-entry,
+.healthy-menu p>span,.healthy-menu>div>button,
+.recipe-editorial-heading>.recipe-eyebrow,.recipe-personal-note b,
+.recipe-product .recipe-use-amount,.recipe-product-link,.recipe-cooking-steps>li>span,
+.recipe-coupon,.recipe-detail-total.discount,
+.recipe-basket-summary>.recipe-basket-discount,.recipe-basket-summary>.recipe-basket-discount>b,
+.report-hook-copy em,.report-hook-copy>span,
+.report-preview i,.preview-next button,
+.daily-summary-top>span,.daily-summary-top>b,
+.daily-meal-summary .daily-energy-value,.daily-energy-value>small,
+.daily-summary-bottom>span:last-child,
+.easy-product-kind,.easy-product-add,.easy-browse,
+.easy-product-main>strong em,.product-sale,
+.coupon-wallet-title>span,.report-wallet-tickets strong,.report-wallet-tickets svg,
+.menu-coupon-ticket .menu-coupon-value>small,.menu-coupon-ticket .menu-coupon-value>strong,
+.menu-coupon-ticket .menu-coupon-apply,
+.wallet-ticket:not(.unavailable) b,.wallet-ticket:not(.unavailable)>button,
+.cart-coupon-field select,.checkout-summary .coupon-discount,.checkout-summary .coupon-discount b,
+.shop-card .free-delivery,.meal-bridge button,
+.calendar-caption i,.food-report i,.sheet-options .chosen,
+.meal-day .benefit-cell-label,.meal-day .benefit-cell-label:is(.coupon,.pickup),
+.day-benefit button,.day-benefit .benefit-market-link,.earned-points,.checkout-benefit>b,
+.meal-benefit-trigger,.meal-benefit-trigger.coupon,
+.benefit-reveal .reward-kicker,.benefit-reveal h3 strong,
+.benefit-reveal.points h3 strong,.order-earned b,.order-nutrition-box>button,
+.home-promo small,.home-promo-link,.popular-label,
+.shopping-banner-copy>small,.shopping-banner-copy>span{color:var(--primary-text)}
+/* Purple coupon surfaces remain vivid; their highlighted text uses light primary mint. */
+.personal-coupon-hook .coupon-hook-copy em,
+.personal-coupon-hook .coupon-hook-copy>b,
+.report-wallet-tickets .wallet-ticket-mark,
+.health-report .coupon-wallet-panel>.coupon-wallet-all,
+.menu-coupon-ticket .menu-coupon-apply>b,
+.menu-coupon-ticket.selected .menu-coupon-apply,
+.menu-coupon-ticket.selected .menu-coupon-apply>b,
+.wallet .coupon-preview{color:var(--primary-text-on-dark)}
+/* Primary-filled controls retain a dark foreground for contrast. */
+.recipe-basket-summary>.recommend-primary,.reward-order-button{color:#123d35}
+
+/* Neutral borders, with the recommendation and its preparation in one accordion. */
+.personalized-hook .personal-record-evidence,
+.personalized-hook.positive .personal-record-evidence{border-left-width:1px;border-left-color:#e1e7e4}
+.preparation-toggle{margin-top:15px;border:1px solid #e1e7e4;border-radius:12px;background:#fff;overflow:hidden}
+.preparation-toggle>summary,.recipe-method-toggle>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;text-align:left}
+.preparation-toggle>summary::-webkit-details-marker,.recipe-method-toggle>summary::-webkit-details-marker{display:none}
+.preparation-toggle>summary>span:first-child{min-width:0;display:flex;flex-direction:column;gap:5px}
+.preparation-toggle>summary b{font-size:14px;line-height:1.5;color:#20282b}
+.preparation-toggle>summary small{font-size:12px;line-height:1.6;color:#5b6962;word-break:keep-all}
+.toggle-caption{display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:12px;color:var(--primary-text)}
+.preparation-toggle>summary svg,.recipe-method-toggle>summary svg{width:13px;height:13px;flex-shrink:0;transition:transform .15s}
+.preparation-toggle[open]>summary svg,.recipe-method-toggle[open]>summary svg{transform:rotate(90deg)}
+.preparation-toggle:not([open])>summary .toggle-close-label,.preparation-toggle[open]>summary .toggle-open-label,
+.recipe-method-toggle:not([open])>summary .toggle-close-label,.recipe-method-toggle[open]>summary .toggle-open-label{display:none}
+.preparation-panel{padding:0 14px 16px;border-top:1px solid #edf0ee}
+.preparation-panel>.recipe-editorial{border:0;margin:0;padding-top:18px}
+.preparation-panel>.baemin-easy-section.compact{margin:0;padding-top:16px;border:0}
+.preparation-panel>.baemin-easy-section>h3,.preparation-panel>.baemin-easy-section>p{display:none}
+.preparation-panel .recipe-products{overflow-x:auto;grid-template-columns:repeat(3,minmax(100px,1fr));padding-bottom:4px}
+.recipe-method-toggle{border:1px solid #dfe7e3;border-radius:10px;margin:18px 0;overflow:hidden;background:#fff}
+.recipe-method-toggle>summary{padding:14px;font-size:14px;font-weight:700;color:#26352e}
+.recipe-method-toggle>summary b{font-size:12px;font-weight:650;color:var(--primary-text);margin-left:auto}
+.recipe-method-body{padding:0 14px 12px;border-top:1px solid #edf0ee}
+.recipe-method-body .recipe-cooking-tip{margin-bottom:0}
+.preparation-toggle>summary:focus-visible,.recipe-method-toggle>summary:focus-visible{outline:2px solid var(--primary-text);outline-offset:-3px;border-radius:10px}
+@media(prefers-reduced-motion:reduce){.preparation-toggle>summary svg,.recipe-method-toggle>summary svg{transition:none}}
+
+/* Keep macro totals neutral and make the preparation entry the clear colored action. */
+.habit-statistics :is(span,b,b small){color:#17191b}
+.preparation-toggle{border-color:#a4e7d9}
+.preparation-toggle>summary{background:#e5faf5}
+.preparation-toggle>summary b{color:var(--primary-text);font-weight:750}
+.preparation-toggle>summary small{color:#416b60}
+.preparation-toggle>summary .toggle-caption{padding:6px 8px;border-radius:7px;background:#ffffffbd;color:var(--primary-text);font-weight:700}
+.preparation-toggle[open]>.preparation-panel{border-top-color:#c9ece2}
+
+/* Payment amounts and the recommendation heading use their dedicated colors. */
+.order-money b{color:var(--purple)}
+.personal-suggestions-heading{color:#17191b}

@@ -1,0 +1,25 @@
+{
+  "source": "Screenshot 2026-10-26 at 7.46.19 AM.png",
+  "sha256": "dbfa4d842a33d515da238a28f650bda314cd24c4a3b16dbc5d2b49f6fbc5abb8",
+  "crops": {
+    "points": [
+      341,
+      235,
+      391,
+      286
+    ],
+    "coupon": [
+      145,
+      337,
+      201,
+      398
+    ],
+    "pickup": [
+      28,
+      336,
+      77,
+      394
+    ]
+  },
+  "processing": "border flood of neutral near-white background; no image generation"
+}

@@ -1,0 +1,1237 @@
+{
+  "nutritionRevision": "2026-10-29-v1",
+  "shopAdditions": [
+    {
+      "id": "mcdonalds",
+      "name": "맥도날드",
+      "brand": "맥도날드",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://www.mcdonalds.co.kr/kor/menu/burger",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "burgerking",
+      "name": "버거킹",
+      "brand": "버거킹",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://web-prd.burgerking.co.kr/menu/main",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "lotteria",
+      "name": "롯데리아",
+      "brand": "롯데리아",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://img.lotteeatz.com/shopping/main",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "momstouch",
+      "name": "맘스터치",
+      "brand": "맘스터치",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://momstouch.co.kr/",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "kfc",
+      "name": "KFC",
+      "brand": "KFC",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://www.kfckorea.com/kfc/index.asp",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "mongchon-dakgalbi",
+      "name": "몽촌 닭갈비",
+      "category": "한식",
+      "rating": null,
+      "minOrder": 30000,
+      "minMainServings": 2,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "address": "서울 송파구 석촌호수로 298, 104·105호",
+      "placeUrl": "https://map.naver.com/p/entry/place/1779981653",
+      "menuSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "operationStatus": "prototype",
+      "description": "잠실의 한방 철판 닭갈비 · 한방·매콤 메뉴와 칼국수",
+      "serviceNote": "가상 주문으로 이용할 수 있어요."
+    }
+  ],
+  "menuAdditions": [
+    {
+      "id": "mcdonalds-bigmac",
+      "shopId": "mcdonalds",
+      "name": "빅맥",
+      "price": 5700,
+      "kind": "burger",
+      "brand": "맥도날드",
+      "description": "쇠고기 패티 두 장과 치즈, 채소를 넣은 버거",
+      "nutrition": {
+        "calories": 580,
+        "carbs": 46,
+        "protein": 27,
+        "fat": 32.0
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.mcdonalds.co.kr/kor/menu/burger",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "mcdonalds-shanghai",
+      "shopId": "mcdonalds",
+      "name": "맥스파이시 상하이 버거",
+      "price": 5900,
+      "kind": "burger",
+      "brand": "맥도날드",
+      "description": "통닭가슴살 패티를 넣은 매콤한 치킨버거",
+      "nutrition": {
+        "calories": 500,
+        "carbs": 49,
+        "protein": 25,
+        "fat": 22.7
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.mcdonalds.co.kr/kor/menu/burger",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "mcdonalds-bigmac-set",
+      "shopId": "mcdonalds",
+      "name": "빅맥 세트",
+      "price": 8000,
+      "kind": "burger",
+      "brand": "맥도날드",
+      "description": "빅맥 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 1060,
+        "carbs": 132,
+        "protein": 32,
+        "fat": 44.9
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.mcdonalds.co.kr/kor/menu/burger",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "burgerking-whopper",
+      "shopId": "burgerking",
+      "name": "와퍼",
+      "price": 7400,
+      "kind": "burger",
+      "brand": "버거킹",
+      "description": "쇠고기 패티와 토마토, 양상추를 넣은 버거",
+      "nutrition": {
+        "calories": 620,
+        "carbs": 52,
+        "protein": 29,
+        "fat": 32.9
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://web-prd.burgerking.co.kr/menu/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "burgerking-cheese-whopper",
+      "shopId": "burgerking",
+      "name": "치즈와퍼",
+      "price": 8000,
+      "kind": "burger",
+      "brand": "버거킹",
+      "description": "와퍼에 치즈를 더한 버거",
+      "nutrition": {
+        "calories": 660,
+        "carbs": 53,
+        "protein": 32,
+        "fat": 35.6
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://web-prd.burgerking.co.kr/menu/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "burgerking-whopper-set",
+      "shopId": "burgerking",
+      "name": "와퍼 세트",
+      "price": 9900,
+      "kind": "burger",
+      "brand": "버거킹",
+      "description": "와퍼 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 1100,
+        "carbs": 138,
+        "protein": 34,
+        "fat": 45.8
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://web-prd.burgerking.co.kr/menu/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "lotteria-bulgogi",
+      "shopId": "lotteria",
+      "name": "리아불고기",
+      "price": 5100,
+      "kind": "burger",
+      "brand": "롯데리아",
+      "description": "불고기 소스와 패티, 채소를 넣은 버거",
+      "nutrition": {
+        "calories": 480,
+        "carbs": 52,
+        "protein": 20,
+        "fat": 21.3
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://img.lotteeatz.com/shopping/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "lotteria-shrimp",
+      "shopId": "lotteria",
+      "name": "리아새우",
+      "price": 5100,
+      "kind": "burger",
+      "brand": "롯데리아",
+      "description": "새우 패티와 양상추를 넣은 버거",
+      "nutrition": {
+        "calories": 490,
+        "carbs": 58,
+        "protein": 16,
+        "fat": 21.6
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://img.lotteeatz.com/shopping/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "lotteria-bulgogi-set",
+      "shopId": "lotteria",
+      "name": "리아불고기 세트",
+      "price": 7500,
+      "kind": "burger",
+      "brand": "롯데리아",
+      "description": "리아불고기 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 960,
+        "carbs": 138,
+        "protein": 25,
+        "fat": 34.2
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://img.lotteeatz.com/shopping/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "momstouch-thigh",
+      "shopId": "momstouch",
+      "name": "싸이버거",
+      "price": 5200,
+      "kind": "burger",
+      "brand": "맘스터치",
+      "description": "닭다리살 패티와 채소를 넣은 치킨버거",
+      "nutrition": {
+        "calories": 600,
+        "carbs": 58,
+        "protein": 28,
+        "fat": 28.4
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://momstouch.co.kr/",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "momstouch-white-garlic",
+      "shopId": "momstouch",
+      "name": "화이트갈릭버거",
+      "price": 5500,
+      "kind": "burger",
+      "brand": "맘스터치",
+      "description": "치킨 패티에 화이트갈릭 소스를 더한 버거",
+      "nutrition": {
+        "calories": 750,
+        "carbs": 66,
+        "protein": 35,
+        "fat": 38.4
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://momstouch.co.kr/",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "momstouch-thigh-set",
+      "shopId": "momstouch",
+      "name": "싸이버거 세트",
+      "price": 7600,
+      "kind": "burger",
+      "brand": "맘스터치",
+      "description": "싸이버거 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 1080,
+        "carbs": 144,
+        "protein": 33,
+        "fat": 41.3
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://momstouch.co.kr/",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "kfc-zinger",
+      "shopId": "kfc",
+      "name": "징거버거",
+      "price": 5900,
+      "kind": "burger",
+      "brand": "KFC",
+      "description": "닭가슴살 패티와 채소를 넣은 치킨버거",
+      "nutrition": {
+        "calories": 480,
+        "carbs": 46,
+        "protein": 30,
+        "fat": 19.6
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.kfckorea.com/kfc/index.asp",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "kfc-tower",
+      "shopId": "kfc",
+      "name": "타워버거",
+      "price": 6900,
+      "kind": "burger",
+      "brand": "KFC",
+      "description": "치킨 패티에 해시브라운과 치즈를 더한 버거",
+      "nutrition": {
+        "calories": 650,
+        "carbs": 65,
+        "protein": 34,
+        "fat": 28.2
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.kfckorea.com/kfc/index.asp",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "kfc-zinger-set",
+      "shopId": "kfc",
+      "name": "징거버거 세트",
+      "price": 8200,
+      "kind": "burger",
+      "brand": "KFC",
+      "description": "징거버거 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 960,
+        "carbs": 132,
+        "protein": 35,
+        "fat": 32.4
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.kfckorea.com/kfc/index.asp",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "dakgalbi",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/api/openApiInfo.do?svc_no=I2790",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-herbal",
+      "name": "몽촌 한방 닭갈비",
+      "price": 17000,
+      "nutrition": {
+        "calories": 600,
+        "carbs": 45,
+        "protein": 46,
+        "fat": 26
+      },
+      "nutritionBasis": "1인분 약 400g · 밥·추가 사리 제외",
+      "servings": 1,
+      "description": "한방 양념 닭갈비 · 2인분부터 주문",
+      "mainServings": 1,
+      "image": "/assets/food/mongchon-herbal.webp",
+      "defaultQuantity": 2
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "dakgalbi",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/api/openApiInfo.do?svc_no=I2790",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-spicy",
+      "name": "몽촌 매콤 닭갈비",
+      "price": 17000,
+      "nutrition": {
+        "calories": 620,
+        "carbs": 50,
+        "protein": 46,
+        "fat": 26
+      },
+      "nutritionBasis": "1인분 약 400g · 밥·추가 사리 제외",
+      "servings": 1,
+      "description": "매콤한 양념 닭갈비 · 2인분부터 주문",
+      "mainServings": 1,
+      "image": "/assets/food/mongchon-spicy.webp",
+      "defaultQuantity": 2
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "dakgalbi",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/api/openApiInfo.do?svc_no=I2790",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-takeout",
+      "name": "닭갈비 포장 2인분",
+      "price": 30000,
+      "nutrition": {
+        "calories": 1200,
+        "carbs": 90,
+        "protein": 92,
+        "fat": 52
+      },
+      "nutritionBasis": "포장 2인분 전체 약 800g · 밥 제외",
+      "servings": 2,
+      "description": "함께 나눠 먹는 포장 2인분",
+      "mainServings": 2,
+      "image": "/assets/food/mongchon-herbal.webp"
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "noodles",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "일반 칼국수에 들기름·양념·국물 구성을 가정한 추정",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-perilla-noodles",
+      "name": "들기름 비빔 칼국수",
+      "price": 9500,
+      "nutrition": {
+        "calories": 650,
+        "carbs": 105,
+        "protein": 16,
+        "fat": 18.4
+      },
+      "nutritionBasis": "들기름·양념 포함 1그릇 약 450g",
+      "servings": 1,
+      "description": "고소한 들기름을 곁들인 비빔 칼국수",
+      "mainServings": 0
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "noodles",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "일반 칼국수에 들기름·양념·국물 구성을 가정한 추정",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-cold-noodles",
+      "name": "옛날 냉 칼국수",
+      "price": 9500,
+      "nutrition": {
+        "calories": 560,
+        "carbs": 110,
+        "protein": 17,
+        "fat": 5.8
+      },
+      "nutritionBasis": "국물 포함 1그릇 약 650g",
+      "servings": 1,
+      "description": "시원하게 즐기는 칼국수",
+      "mainServings": 0
+    }
+  ],
+  "itemUpdates": [
+    {
+      "id": "bibimbap",
+      "nutrition": {
+        "calories": 707,
+        "carbs": 114.8,
+        "protein": 19.9,
+        "fat": 18.6
+      },
+      "legacyNutrition": {
+        "calories": 620,
+        "carbs": 88,
+        "protein": 21,
+        "fat": 20
+      },
+      "nutritionBasis": "1그릇 약 500g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "salmon",
+      "nutrition": {
+        "calories": 650,
+        "carbs": 72,
+        "protein": 32,
+        "fat": 26
+      },
+      "legacyNutrition": {
+        "calories": 540,
+        "carbs": 54,
+        "protein": 32,
+        "fat": 22
+      },
+      "nutritionBasis": "밥·연어·채소·드레싱 포함 1그릇 약 450g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "noodles",
+      "nutrition": {
+        "calories": 599,
+        "carbs": 118.5,
+        "protein": 21.1,
+        "fat": 4.5
+      },
+      "legacyNutrition": {
+        "calories": 480,
+        "carbs": 83,
+        "protein": 16,
+        "fat": 8
+      },
+      "nutritionBasis": "국물 포함 1그릇 약 700g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/mkisna/2013.pdf"
+    },
+    {
+      "id": "chicken",
+      "nutrition": {
+        "calories": 2100,
+        "carbs": 75,
+        "protein": 135,
+        "fat": 140
+      },
+      "legacyNutrition": {
+        "calories": 1840,
+        "carbs": 92,
+        "protein": 116,
+        "fat": 112
+      },
+      "nutritionBasis": "한 마리 전체 · 가식부 약 750g · 2~3인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "salad-poke",
+      "nutrition": {
+        "calories": 450,
+        "carbs": 30,
+        "protein": 30,
+        "fat": 23.3
+      },
+      "legacyNutrition": {
+        "calories": 480,
+        "carbs": 35,
+        "protein": 30,
+        "fat": 22
+      },
+      "nutritionBasis": "드레싱 포함 1그릇 약 350g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "soy-bowl",
+      "nutrition": {
+        "calories": 600,
+        "carbs": 80,
+        "protein": 25,
+        "fat": 20
+      },
+      "legacyNutrition": {
+        "calories": 510,
+        "carbs": 70,
+        "protein": 25,
+        "fat": 16
+      },
+      "nutritionBasis": "밥·두부·버섯·소스 포함 1그릇 약 450g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "spicy-noodles",
+      "nutrition": {
+        "calories": 618,
+        "carbs": 109.9,
+        "protein": 18.8,
+        "fat": 11.5
+      },
+      "legacyNutrition": {
+        "calories": 560,
+        "carbs": 91,
+        "protein": 17,
+        "fat": 11
+      },
+      "nutritionBasis": "양념 포함 1그릇 약 550g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "warm-noodles",
+      "nutrition": {
+        "calories": 600,
+        "carbs": 114,
+        "protein": 22,
+        "fat": 6.2
+      },
+      "legacyNutrition": {
+        "calories": 470,
+        "carbs": 80,
+        "protein": 17,
+        "fat": 8
+      },
+      "nutritionBasis": "국물 포함 1그릇 약 700g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/mkisna/2013.pdf"
+    },
+    {
+      "id": "crispy-original",
+      "nutrition": {
+        "calories": 2100,
+        "carbs": 75,
+        "protein": 135,
+        "fat": 140
+      },
+      "legacyNutrition": {
+        "calories": 1750,
+        "carbs": 85,
+        "protein": 110,
+        "fat": 108
+      },
+      "nutritionBasis": "한 마리 전체 · 가식부 약 750g · 2~3인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "crispy-boneless",
+      "nutrition": {
+        "calories": 2350,
+        "carbs": 110,
+        "protein": 140,
+        "fat": 150
+      },
+      "legacyNutrition": {
+        "calories": 1820,
+        "carbs": 97,
+        "protein": 106,
+        "fat": 116
+      },
+      "nutritionBasis": "순살 한 상자 전체 약 800g · 2~3인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "crispy-half",
+      "nutrition": {
+        "calories": 2400,
+        "carbs": 130,
+        "protein": 128,
+        "fat": 152
+      },
+      "legacyNutrition": {
+        "calories": 1910,
+        "carbs": 124,
+        "protein": 104,
+        "fat": 114
+      },
+      "nutritionBasis": "양념 포함 한 마리 전체 · 2~3인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "pizza-pepperoni",
+      "nutrition": {
+        "calories": 2240,
+        "carbs": 240,
+        "protein": 96,
+        "fat": 99.6
+      },
+      "legacyNutrition": {
+        "calories": 1590,
+        "carbs": 162,
+        "protein": 62,
+        "fat": 74
+      },
+      "nutritionBasis": "라지 8조각 한 판 전체 · 2조각 약 560 kcal",
+      "servings": 4,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "pizza-cheese",
+      "nutrition": {
+        "calories": 2080,
+        "carbs": 232,
+        "protein": 96,
+        "fat": 85.3
+      },
+      "legacyNutrition": {
+        "calories": 1480,
+        "carbs": 156,
+        "protein": 67,
+        "fat": 66
+      },
+      "nutritionBasis": "라지 8조각 한 판 전체 · 2조각 약 520 kcal",
+      "servings": 4,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "pizza-set",
+      "nutrition": {
+        "calories": 2600,
+        "carbs": 335,
+        "protein": 98,
+        "fat": 96.4
+      },
+      "legacyNutrition": {
+        "calories": 1840,
+        "carbs": 202,
+        "protein": 71,
+        "fat": 82
+      },
+      "nutritionBasis": "라지 피자 1판·사이드·일반 콜라 500mL 전체",
+      "servings": 4,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "burger-classic",
+      "nutrition": {
+        "calories": 1050,
+        "carbs": 135,
+        "protein": 36,
+        "fat": 40.7
+      },
+      "legacyNutrition": {
+        "calories": 920,
+        "carbs": 103,
+        "protein": 34,
+        "fat": 42
+      },
+      "nutritionBasis": "버거·중간 감자튀김·일반 콜라 355mL 세트",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "burger-double",
+      "nutrition": {
+        "calories": 810,
+        "carbs": 53,
+        "protein": 48,
+        "fat": 45.1
+      },
+      "legacyNutrition": {
+        "calories": 810,
+        "carbs": 53,
+        "protein": 48,
+        "fat": 43
+      },
+      "nutritionBasis": "더블 패티 버거 단품 1개 약 300g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "burger-chicken",
+      "nutrition": {
+        "calories": 650,
+        "carbs": 61,
+        "protein": 30,
+        "fat": 31.8
+      },
+      "legacyNutrition": {
+        "calories": 650,
+        "carbs": 61,
+        "protein": 30,
+        "fat": 32
+      },
+      "nutritionBasis": "치킨버거 단품 1개 약 250g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "tteokbokki",
+      "nutrition": {
+        "calories": 456,
+        "carbs": 90.8,
+        "protein": 11.4,
+        "fat": 5.3
+      },
+      "legacyNutrition": {
+        "calories": 720,
+        "carbs": 137,
+        "protein": 15,
+        "fat": 12
+      },
+      "nutritionBasis": "국물·어묵 포함 1그릇 약 300g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "tteok-set",
+      "nutrition": {
+        "calories": 1050,
+        "carbs": 172,
+        "protein": 24,
+        "fat": 29.6
+      },
+      "legacyNutrition": {
+        "calories": 1120,
+        "carbs": 168,
+        "protein": 24,
+        "fat": 40
+      },
+      "nutritionBasis": "떡볶이 약 450g·튀김 약 150g 전체 · 2인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "kimchi-stew",
+      "nutrition": {
+        "calories": 553,
+        "carbs": 80,
+        "protein": 21,
+        "fat": 16.6
+      },
+      "legacyNutrition": {
+        "calories": 670,
+        "carbs": 69,
+        "protein": 35,
+        "fat": 29
+      },
+      "nutritionBasis": "김치찌개 약 400g·공깃밥 210g 포함",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "soy-stew",
+      "nutrition": {
+        "calories": 455,
+        "carbs": 81.5,
+        "protein": 17.5,
+        "fat": 6.6
+      },
+      "legacyNutrition": {
+        "calories": 550,
+        "carbs": 71,
+        "protein": 25,
+        "fat": 18
+      },
+      "nutritionBasis": "된장찌개 약 400g·공깃밥 210g 포함",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "pork-cutlet",
+      "nutrition": {
+        "calories": 1000,
+        "carbs": 115,
+        "protein": 40,
+        "fat": 42.2
+      },
+      "legacyNutrition": {
+        "calories": 870,
+        "carbs": 97,
+        "protein": 39,
+        "fat": 38
+      },
+      "nutritionBasis": "돈까스·밥·소스·샐러드 정식 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "salmon-sushi",
+      "nutrition": {
+        "calories": 650,
+        "carbs": 85,
+        "protein": 35,
+        "fat": 18.9
+      },
+      "legacyNutrition": {
+        "calories": 690,
+        "carbs": 89,
+        "protein": 38,
+        "fat": 20
+      },
+      "nutritionBasis": "생연어 초밥 10피스 전체 약 350g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "sushi-combo",
+      "nutrition": {
+        "calories": 720,
+        "carbs": 105,
+        "protein": 38,
+        "fat": 16.4
+      },
+      "legacyNutrition": {
+        "calories": 760,
+        "carbs": 102,
+        "protein": 42,
+        "fat": 21
+      },
+      "nutritionBasis": "모둠 초밥 12피스 전체 약 400g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "coffee-cake",
+      "nutrition": {
+        "calories": 620,
+        "carbs": 67,
+        "protein": 13,
+        "fat": 33.3
+      },
+      "legacyNutrition": {
+        "calories": 540,
+        "carbs": 61,
+        "protein": 12,
+        "fat": 28
+      },
+      "nutritionBasis": "카페라떼 355mL·티라미수 1조각 120g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "croissant-set",
+      "nutrition": {
+        "calories": 290,
+        "carbs": 31,
+        "protein": 6,
+        "fat": 15.8
+      },
+      "legacyNutrition": {
+        "calories": 480,
+        "carbs": 49,
+        "protein": 10,
+        "fat": 27
+      },
+      "nutritionBasis": "크루아상 70g·무가당 아메리카노 1잔",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "tiramisu",
+      "nutrition": {
+        "calories": 700,
+        "carbs": 70,
+        "protein": 12,
+        "fat": 41.3
+      },
+      "legacyNutrition": {
+        "calories": 650,
+        "carbs": 71,
+        "protein": 12,
+        "fat": 36
+      },
+      "nutritionBasis": "티라미수 120g 2개 전체 · 1개 약 350 kcal",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "pb-vegetables",
+      "nutrition": {
+        "calories": 90,
+        "carbs": 18,
+        "protein": 3,
+        "fat": 0.7
+      },
+      "legacyNutrition": {
+        "calories": 65,
+        "carbs": 12,
+        "protein": 4,
+        "fat": 1
+      },
+      "nutritionBasis": "다짐 채소 250g 한 팩 전체",
+      "servings": 3,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "fresh-bread",
+      "nutrition": {
+        "calories": 1200,
+        "carbs": 222,
+        "protein": 39,
+        "fat": 17.3
+      },
+      "legacyNutrition": {
+        "calories": 780,
+        "carbs": 84,
+        "protein": 15,
+        "fat": 45
+      },
+      "nutritionBasis": "식빵 1봉 약 450g 전체",
+      "servings": 9,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "apple",
+      "nutrition": {
+        "calories": 312,
+        "carbs": 81.6,
+        "protein": 1.2,
+        "fat": 1.2
+      },
+      "legacyNutrition": {
+        "calories": 285,
+        "carbs": 75,
+        "protein": 1,
+        "fat": 1
+      },
+      "nutritionBasis": "사과 3입 · 가식부 약 600g 전체",
+      "servings": 3,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "fresh-apple",
+      "nutrition": {
+        "calories": 416,
+        "carbs": 108.8,
+        "protein": 1.6,
+        "fat": 1.6
+      },
+      "legacyNutrition": {
+        "calories": 380,
+        "carbs": 100,
+        "protein": 1,
+        "fat": 1
+      },
+      "nutritionBasis": "사과 4입 · 가식부 약 800g 전체",
+      "servings": 4,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    }
+  ]
+}

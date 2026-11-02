@@ -1,0 +1,47 @@
+# Keep this repository limited to application source.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+/docs/*
+!/docs/legacy-web-README.md
+!/index.html
+!/app.js
+!/style.css
+!/assets/
+!/baemin-calendar-mock/
+!/baemin-flutter/
+
+# Credentials, signing material and machine-specific state.
+**/.env
+**/.env.*
+!**/.env.example
+**/*.p12
+**/*.pfx
+**/*.mobileprovision
+**/*.provisionprofile
+**/*.key
+**/key.properties
+**/*keystore*
+**/local.properties
+**/.DS_Store
+**/.idea/
+**/.vscode/
+**/__pycache__/
+**/*.pyc
+**/*.log
+**/node_modules/
+**/build/
+**/.dart_tool/
+**/.swiftpm/
+**/xcuserdata/
+**/.flutter-plugins-dependencies
+
+# Local screenshots, device captures and generated QA images.
+**/qa/**/*.png
+**/qa/**/*.jpg
+**/qa/**/*.jpeg
+**/qa/**/*.webp
+**/qa/**/*.mp4
+**/qa/**/*.mov
+**/runtime-data/

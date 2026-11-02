@@ -1,0 +1,37 @@
+import io
+import json
+import unittest
+from server import analyze,normalize_result,validate_image,APIError
+
+IMAGE='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j8ioAAAAASUVORK5CYII='
+RESULT={'is_food':True,'name':'비빔밥','ingredients':['밥','채소'],'nutrition':{'calories':610,'carbs':85,'protein':20,'fat':18}}
+
+class Tests(unittest.TestCase):
+ def test_demo_never_calls_external_model(self):
+  def forbidden(*a,**kw):self.fail('Demo must not call provider')
+  r=analyze({'image':IMAGE,'mode':'demo','sample':'비빔밥'},opener=forbidden)
+  self.assertEqual(r['source'],'photo-demo');self.assertIsNone(r['modelId'])
+ def test_hf_requires_consent_and_token(self):
+  for kwargs in ({'consent':False},{'consent':True}):
+   with self.assertRaises(APIError):analyze({'image':IMAGE,'mode':'huggingface',**kwargs},token='')
+ def test_vlm_adapter_sends_expected_schema_and_validates_response(self):
+  def fake(req,timeout):
+   self.assertEqual(req.full_url,'https://router.huggingface.co/v1/chat/completions')
+   self.assertEqual(req.headers['Authorization'],'Bearer TEST_ONLY')
+   body=json.loads(req.data)
+   self.assertEqual(body['messages'][0]['content'][1]['image_url']['url'],IMAGE)
+   return io.BytesIO(json.dumps({'choices':[{'message':{'content':'```json\n'+json.dumps(RESULT)+'\n```'}}]}).encode())
+  r=analyze({'image':IMAGE,'mode':'huggingface','consent':True},token='TEST_ONLY',model='test/model:provider',opener=fake)
+  self.assertEqual(r['source'],'hf-estimate');self.assertEqual(r['nutrition']['calories'],610)
+ def test_invalid_image_and_model_nutrients_are_not_accepted(self):
+  for value in ('https://example.com/food.jpg','data:image/svg+xml;base64,AAAA',IMAGE.replace('iVBOR','AAAAA')):
+   with self.assertRaises(APIError):validate_image(value)
+  for value in (-1,float('nan'),True,30001):
+   data={**RESULT,'nutrition':{**RESULT['nutrition'],'calories':value}}
+   with self.assertRaises(APIError):normalize_result(data)
+  with self.assertRaises(APIError):normalize_result({'is_food':False})
+ def test_failed_inference_does_not_return_demo_nutrition(self):
+  def fake(req,timeout):return io.BytesIO(b'{"choices": [{"message":{"content":"not json"}}]}')
+  with self.assertRaises(APIError):analyze({'image':IMAGE,'mode':'huggingface','consent':True},token='TEST_ONLY',opener=fake)
+
+if __name__=='__main__':unittest.main()

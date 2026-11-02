@@ -1,0 +1,377 @@
+[
+  {
+    "name": "nav-home",
+    "file": "nav-home.png",
+    "source": "P01_마이배민_상단.jpg",
+    "sourceSha256": "7b0b24eb271b5ed5ac7dd5cf9d9816c1ef9cc2a1c461abd0269f00a925488cad",
+    "box": [
+      98,
+      1277,
+      139,
+      1316
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "nav-home-active",
+    "file": "nav-home-active.png",
+    "source": "R02_홈.jpg",
+    "sourceSha256": "d10ddbffa31d8c845ce2c245b6e7fba99cfc2e29d27b1a86de1a907230c7ab32",
+    "box": [
+      98,
+      1277,
+      139,
+      1316
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "nav-shopping",
+    "file": "nav-shopping.png",
+    "source": "P01_마이배민_상단.jpg",
+    "sourceSha256": "7b0b24eb271b5ed5ac7dd5cf9d9816c1ef9cc2a1c461abd0269f00a925488cad",
+    "box": [
+      199,
+      1277,
+      240,
+      1316
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "nav-favorites",
+    "file": "nav-favorites.png",
+    "source": "P01_마이배민_상단.jpg",
+    "sourceSha256": "7b0b24eb271b5ed5ac7dd5cf9d9816c1ef9cc2a1c461abd0269f00a925488cad",
+    "box": [
+      301,
+      1277,
+      342,
+      1316
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "nav-orders",
+    "file": "nav-orders.png",
+    "source": "P01_마이배민_상단.jpg",
+    "sourceSha256": "7b0b24eb271b5ed5ac7dd5cf9d9816c1ef9cc2a1c461abd0269f00a925488cad",
+    "box": [
+      399,
+      1277,
+      440,
+      1316
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "nav-orders-active",
+    "file": "nav-orders-active.png",
+    "source": "P06_배달완료_카드.jpg",
+    "sourceSha256": "d86d527f4a2df9c3f0fab53fde171af339022c147acb090bee47d191fd279984",
+    "box": [
+      399,
+      1277,
+      440,
+      1316
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "nav-my",
+    "file": "nav-my.png",
+    "source": "P09_찜_배달픽업.jpg",
+    "sourceSha256": "78cd39729f0af2ba27f75e3b0844d816675f49b9a6c371f0ef75ddd76defabb4",
+    "box": [
+      497,
+      1277,
+      539,
+      1316
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "nav-my-active",
+    "file": "nav-my-active.png",
+    "source": "P01_마이배민_상단.jpg",
+    "sourceSha256": "7b0b24eb271b5ed5ac7dd5cf9d9816c1ef9cc2a1c461abd0269f00a925488cad",
+    "box": [
+      497,
+      1277,
+      539,
+      1316
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "headset",
+    "file": "headset.png",
+    "source": "P01_마이배민_상단.jpg",
+    "sourceSha256": "7b0b24eb271b5ed5ac7dd5cf9d9816c1ef9cc2a1c461abd0269f00a925488cad",
+    "box": [
+      477,
+      183,
+      515,
+      220
+    ],
+    "operation": "ink-soft",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "settings",
+    "file": "settings.png",
+    "source": "P01_마이배민_상단.jpg",
+    "sourceSha256": "7b0b24eb271b5ed5ac7dd5cf9d9816c1ef9cc2a1c461abd0269f00a925488cad",
+    "box": [
+      548,
+      181,
+      586,
+      220
+    ],
+    "operation": "ink-soft",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "search",
+    "file": "search.png",
+    "source": "P09_찜_배달픽업.jpg",
+    "sourceSha256": "78cd39729f0af2ba27f75e3b0844d816675f49b9a6c371f0ef75ddd76defabb4",
+    "box": [
+      489,
+      181,
+      526,
+      219
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "cart",
+    "file": "cart.png",
+    "source": "R12_종료_홈.jpg",
+    "sourceSha256": "e2cf45357c8c265576c01795b1f3da69f6f37971ca451405511e5c1003603f64",
+    "box": [
+      562,
+      181,
+      601,
+      217
+    ],
+    "operation": "ink+badge-occlusion-repair",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "bell",
+    "file": "bell.png",
+    "source": "R12_종료_홈.jpg",
+    "sourceSha256": "e2cf45357c8c265576c01795b1f3da69f6f37971ca451405511e5c1003603f64",
+    "box": [
+      502,
+      180,
+      538,
+      218
+    ],
+    "operation": "ink",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "name": "category-chicken",
+    "file": "category-chicken.png",
+    "source": "R02_홈.jpg",
+    "sourceSha256": "d10ddbffa31d8c845ce2c245b6e7fba99cfc2e29d27b1a86de1a907230c7ab32",
+    "box": [
+      43,
+      436,
+      137,
+      533
+    ],
+    "operation": "crop",
+    "width": 94,
+    "height": 97
+  },
+  {
+    "name": "category-cafe",
+    "file": "category-cafe.png",
+    "source": "R02_홈.jpg",
+    "sourceSha256": "d10ddbffa31d8c845ce2c245b6e7fba99cfc2e29d27b1a86de1a907230c7ab32",
+    "box": [
+      158,
+      436,
+      252,
+      533
+    ],
+    "operation": "crop",
+    "width": 94,
+    "height": 97
+  },
+  {
+    "name": "category-pizza",
+    "file": "category-pizza.png",
+    "source": "R02_홈.jpg",
+    "sourceSha256": "d10ddbffa31d8c845ce2c245b6e7fba99cfc2e29d27b1a86de1a907230c7ab32",
+    "box": [
+      273,
+      436,
+      367,
+      533
+    ],
+    "operation": "crop",
+    "width": 94,
+    "height": 97
+  },
+  {
+    "name": "category-stew",
+    "file": "category-stew.png",
+    "source": "R02_홈.jpg",
+    "sourceSha256": "d10ddbffa31d8c845ce2c245b6e7fba99cfc2e29d27b1a86de1a907230c7ab32",
+    "box": [
+      388,
+      436,
+      482,
+      533
+    ],
+    "operation": "crop",
+    "width": 94,
+    "height": 97
+  },
+  {
+    "name": "category-sushi",
+    "file": "category-sushi.png",
+    "source": "R02_홈.jpg",
+    "sourceSha256": "d10ddbffa31d8c845ce2c245b6e7fba99cfc2e29d27b1a86de1a907230c7ab32",
+    "box": [
+      501,
+      436,
+      595,
+      533
+    ],
+    "operation": "crop",
+    "width": 94,
+    "height": 97
+  },
+  {
+    "name": "category-burger",
+    "file": "category-burger.png",
+    "source": "R02_홈.jpg",
+    "sourceSha256": "d10ddbffa31d8c845ce2c245b6e7fba99cfc2e29d27b1a86de1a907230c7ab32",
+    "box": [
+      273,
+      583,
+      367,
+      680
+    ],
+    "operation": "crop",
+    "width": 94,
+    "height": 97
+  },
+  {
+    "name": "category-snack",
+    "file": "category-snack.png",
+    "source": "R02_홈.jpg",
+    "sourceSha256": "d10ddbffa31d8c845ce2c245b6e7fba99cfc2e29d27b1a86de1a907230c7ab32",
+    "box": [
+      388,
+      583,
+      482,
+      680
+    ],
+    "operation": "crop",
+    "width": 94,
+    "height": 97
+  },
+  {
+    "name": "category-single",
+    "file": "category-single.png",
+    "source": "R12_종료_홈.jpg",
+    "sourceSha256": "e2cf45357c8c265576c01795b1f3da69f6f37971ca451405511e5c1003603f64",
+    "box": [
+      157,
+      572,
+      253,
+      680
+    ],
+    "operation": "crop",
+    "width": 96,
+    "height": 108
+  },
+  {
+    "name": "market-bmart",
+    "file": "market-bmart.png",
+    "source": "R12_종료_홈.jpg",
+    "sourceSha256": "e2cf45357c8c265576c01795b1f3da69f6f37971ca451405511e5c1003603f64",
+    "box": [
+      40,
+      813,
+      140,
+      927
+    ],
+    "operation": "crop",
+    "width": 100,
+    "height": 114
+  },
+  {
+    "name": "market-cu",
+    "file": "market-cu.png",
+    "source": "R12_종료_홈.jpg",
+    "sourceSha256": "e2cf45357c8c265576c01795b1f3da69f6f37971ca451405511e5c1003603f64",
+    "box": [
+      142,
+      812,
+      242,
+      928
+    ],
+    "operation": "crop",
+    "width": 100,
+    "height": 116
+  },
+  {
+    "name": "market-gs",
+    "file": "market-gs.png",
+    "source": "R12_종료_홈.jpg",
+    "sourceSha256": "e2cf45357c8c265576c01795b1f3da69f6f37971ca451405511e5c1003603f64",
+    "box": [
+      249,
+      822,
+      352,
+      928
+    ],
+    "operation": "crop",
+    "width": 103,
+    "height": 106
+  },
+  {
+    "name": "profile-mascot",
+    "file": "profile-mascot.png",
+    "source": "P01_마이배민_상단.jpg",
+    "sourceSha256": "7b0b24eb271b5ed5ac7dd5cf9d9816c1ef9cc2a1c461abd0269f00a925488cad",
+    "box": [
+      226,
+      334,
+      411,
+      470
+    ],
+    "operation": "matte",
+    "width": 181,
+    "height": 128
+  }
+]

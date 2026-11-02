@@ -1,0 +1,67 @@
+/* Layout observed in P05 / P07 / P14 iPhone Mirroring captures. */
+.order-detail-screen .dialog-head{height:57px;position:sticky;top:0;background:#fff;z-index:8;display:flex;padding:0 17px;border-bottom:0;gap:0}
+.order-detail-screen .dialog-head h2{position:absolute;left:58px;right:58px;text-align:center;font-size:18px;line-height:24px;margin:0;pointer-events:none}
+.order-detail-screen .flow-back{width:30px;flex-shrink:0;font-size:32px}
+.order-detail-screen .detail-header-cart{margin-left:auto;position:relative;padding:4px;width:32px;height:38px;display:grid;place-items:center}
+.detail-header-cart .captured-icon{width:27px;height:27px;object-fit:contain}
+.order-detail-screen .dialog-body{padding:0 0 24px;min-height:calc(100% - 57px);background:#fff}
+.baemin-order-detail{padding:15px 17px 12px;line-height:1.5;color:#202326}
+.order-benefit-strip{display:block;width:100%;border:1px solid #aaa1fb;background:#f0edff;color:#6337ed;border-radius:16px 16px 0 0;padding:9px 8px 17px;font-size:12px;font-weight:750;text-align:center;margin-bottom:-10px}
+.order-status-card{position:relative;border:1px solid #e3e4e6;border-radius:18px;overflow:hidden;background:#fff}
+.order-status-info{padding:22px 22px 23px}
+.order-status-info h3{font-size:22px;letter-spacing:-.9px;line-height:1.45;margin:0 0 13px;font-weight:750}
+.order-status-info p{font-size:14px;color:#92969b;line-height:1.65;margin:1px 0;letter-spacing:-.4px}
+.order-status-info em{font-style:normal;color:#fb7476;margin-left:3px}
+.order-store-row{display:flex;align-items:center;gap:8px;border-top:1px solid #f2f2f4;padding:19px 22px;min-height:78px}
+.order-store-link{flex:1;min-width:0;display:flex;align-items:center;gap:7px;text-align:left;padding:0}
+.order-store-link .food-thumb{width:28px;height:28px;flex-shrink:0;border-radius:10px;object-fit:cover}
+.order-store-link b{font-size:16px;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.5px}
+.order-store-link svg{height:13px;width:13px;flex-shrink:0}
+.order-store-row .heart{padding:0;width:28px;height:29px;display:grid;place-items:center;flex-shrink:0}
+.order-store-row .heart svg{width:23px;height:23px;stroke-width:2.3;fill:none;stroke:#222}
+.order-store-row .heart.on svg{fill:#ff5b82;stroke:#ff5b82}
+.order-detail-tabs{display:flex;gap:8px;padding:24px 0 15px;background:#fff;position:sticky;top:57px;z-index:7;margin:0 -1px}
+.order-detail-tabs button{border:1px solid #eff0f2;padding:10px 17px;border-radius:25px;white-space:nowrap;font-size:14px;line-height:20px;color:#363b40;background:#fff}
+.order-detail-tabs button.active{border-color:#202326;background:#202326;color:#fff;font-weight:750}
+.order-detail-section{padding:15px 0 21px;scroll-margin-top:140px}
+.order-detail-section>h3{font-size:17px;line-height:26px;letter-spacing:-.5px;margin:0 0 17px 5px;font-weight:750}
+.order-menu-box,.order-payment-box,.order-delivery-box{border:1px solid #e3e4e6;border-radius:18px;padding:22px;background:#fff}
+.order-menu-row+.order-menu-row{border-top:1px solid #f1f2f4;padding-top:21px;margin-top:22px}
+.order-menu-row h4{font-size:16px;font-weight:500;line-height:1.6;margin:0 0 10px;letter-spacing:-.4px}
+.order-menu-row ul{list-style:none;padding:0;margin:0 0 10px;color:#93979b;font-size:13px;line-height:1.9}
+.order-menu-row li:before{content:'· ';font-weight:800}
+.order-item-price{display:flex;align-items:baseline;gap:5px;margin:10px 0 0}
+.order-item-price>b{font-size:18px;font-weight:750;letter-spacing:-.5px}
+.order-item-price>span{font-size:14px;color:#9b9ea2}
+.order-menu-actions{display:flex;gap:9px;margin-top:23px}
+.order-menu-actions>button{flex:1;font-size:13px;padding:10px 3px;min-height:41px;font-weight:750;border:1px solid #d7d9dc;border-radius:8px;color:#202326;background:#fff}
+.order-menu-actions .primary-reorder{background:var(--mint);border-color:var(--mint)}
+.order-menu-actions>button:disabled{color:#c8cbce;opacity:1}
+.order-review-link{width:100%;margin-top:10px;border:1px solid #e2e4e7;padding:11px;border-radius:8px;font-size:12px;font-weight:650;display:flex;justify-content:center;gap:5px;align-items:center}
+.order-review-link svg{width:11px;height:11px}
+.order-payment-box>div{display:flex;justify-content:space-between;gap:15px;font-size:14px;margin:0 0 13px}
+.order-payment-box>div>b{font-weight:500}
+.order-payment-box>div:last-child{margin-bottom:0}
+.order-payment-box .payment-total{border-top:1px dashed #d9dce0;padding-top:18px;margin-top:19px;font-size:16px}
+.order-payment-box .payment-total>b,.order-payment-box .payment-total>strong{font-weight:750}
+.order-payment-box .payment-method{color:#8a8f95;font-size:12px;margin-top:16px}
+.order-payment-box .payment-refund{color:#ed6b6d;border-top:1px solid #eee;padding-top:14px}
+.order-delivery-box>div+div{border-top:1px solid #f1f2f4;padding-top:14px;margin-top:15px}
+.order-delivery-box b{font-size:13px;font-weight:650}
+.order-delivery-box p{font-size:13px;color:#90959b;margin:7px 0 0;line-height:1.8}
+.order-earned{border:1px solid #d5eee7;border-radius:10px;padding:14px;margin-top:12px;background:#f1fcf8}
+.order-earned b{font-size:13px;color:#039780;display:block}
+.order-earned span{font-size:10px;color:#94a69f;display:block;margin-top:5px}
+.order-nutrition-box{border:1px solid #e6e9eb;background:#f8faf9;border-radius:15px;padding:19px}
+.order-nutrition-box>span{font-size:10px;color:#899b92;display:block}
+.order-nutrition-box>strong{display:block;font-size:25px;margin-top:8px;letter-spacing:-.7px}
+.order-nutrition-box>strong>small{font-size:11px;font-weight:500;color:#9ba69f}
+.order-nutrition-box>p{font-size:11px;color:#8a9a91;line-height:1.8}
+.order-nutrition-box>button{font-size:12px;font-weight:700;color:#008d7a;display:flex;align-items:center;gap:8px;margin-top:14px;border-top:1px solid #e4eae6;padding:13px 0 0;width:100%;text-align:left}
+.order-nutrition-box>button>svg{width:12px;height:12px;margin-left:auto}
+.order-detail-footnote{text-align:center;color:#b0b5b8;font-size:9px;margin:7px 0 16px}
+.order-simulation{display:flex;align-items:center;gap:9px;background:#f3faf7;border:1px solid #dceee5;border-radius:12px;padding:13px;margin:10px 0 5px}
+.order-simulation>div{flex:1}.order-simulation b{display:block;font-size:13px}.order-simulation small{display:block;font-size:9px;color:#9bafa3;margin-top:4px}
+.order-simulation>button{font-size:11px;padding:9px 10px;background:var(--mint);color:#143f36;border-radius:7px;font-weight:650}
+.order-simulation .simulation-cancel{background:#fff;color:#929b97;border:1px solid #dbe4de}
+@media(max-width:400px){.baemin-order-detail{padding-left:15px;padding-right:15px}.order-status-info{padding:20px}.order-status-info h3{font-size:20px}.order-status-info p{font-size:12px}.order-store-row{padding:18px 20px}.order-store-link b{font-size:14px}.order-detail-tabs{gap:7px}.order-detail-tabs button{padding:9px 14px;font-size:12px}.order-menu-box,.order-payment-box,.order-delivery-box{padding:19px}.order-menu-row h4{font-size:14px}.order-menu-row ul{font-size:12px}.order-item-price>b{font-size:17px}.order-payment-box>div{font-size:13px}}

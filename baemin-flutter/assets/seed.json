@@ -1,0 +1,2801 @@
+{
+  "shops": [
+    {
+      "id": "mongchon-dakgalbi",
+      "name": "몽촌 닭갈비",
+      "category": "한식",
+      "rating": null,
+      "minOrder": 30000,
+      "minMainServings": 2,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "address": "서울 송파구 석촌호수로 298, 104·105호",
+      "placeUrl": "https://map.naver.com/p/entry/place/1779981653",
+      "menuSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "operationStatus": "prototype",
+      "description": "잠실의 한방 철판 닭갈비 · 한방·매콤 메뉴와 칼국수",
+      "serviceNote": "가상 주문으로 이용할 수 있어요."
+    },
+    {
+      "id": "mint-kitchen",
+      "name": "민트키친",
+      "category": "한식",
+      "rating": 4.9,
+      "minOrder": 10000,
+      "open": true
+    },
+    {
+      "id": "noodle-house",
+      "name": "한그릇 국수",
+      "category": "면요리",
+      "rating": 4.8,
+      "minOrder": 9000,
+      "open": true
+    },
+    {
+      "id": "chicken-house",
+      "name": "동네치킨",
+      "category": "치킨",
+      "rating": 4.9,
+      "minOrder": 18000,
+      "open": false
+    },
+    {
+      "id": "crispy-chicken",
+      "name": "바삭한 치킨 연구소",
+      "category": "치킨",
+      "rating": 4.9,
+      "minOrder": 17000,
+      "open": true,
+      "eta": "25~40분"
+    },
+    {
+      "id": "pizza-club",
+      "name": "피자클럽",
+      "category": "피자",
+      "rating": 4.8,
+      "minOrder": 16000,
+      "open": true,
+      "eta": "30~45분"
+    },
+    {
+      "id": "burger-room",
+      "name": "버거룸",
+      "category": "패스트푸드",
+      "rating": 4.9,
+      "minOrder": 8000,
+      "open": true,
+      "eta": "20~30분"
+    },
+    {
+      "id": "snack-lab",
+      "name": "오늘의 분식",
+      "category": "분식",
+      "rating": 4.8,
+      "minOrder": 8000,
+      "open": true,
+      "eta": "20~35분"
+    },
+    {
+      "id": "rice-table",
+      "name": "한상 가득",
+      "category": "찜·탕",
+      "rating": 4.9,
+      "minOrder": 9000,
+      "open": true,
+      "eta": "25~40분"
+    },
+    {
+      "id": "sushi-table",
+      "name": "정성 초밥",
+      "category": "돈까스·회",
+      "rating": 4.9,
+      "minOrder": 12000,
+      "open": true,
+      "eta": "30~45분"
+    },
+    {
+      "id": "cafe-day",
+      "name": "카페 오롯",
+      "category": "카페·디저트",
+      "rating": 4.8,
+      "minOrder": 6000,
+      "open": true,
+      "eta": "15~25분"
+    },
+    {
+      "id": "bmart",
+      "name": "B마트",
+      "category": "마트",
+      "service": "shopping",
+      "rating": 4.9,
+      "minOrder": 0,
+      "open": true,
+      "eta": "약 25분"
+    },
+    {
+      "id": "cu-market",
+      "name": "CU 우리동네점",
+      "category": "편의점",
+      "service": "shopping",
+      "rating": 4.8,
+      "minOrder": 0,
+      "open": true,
+      "eta": "약 30분"
+    },
+    {
+      "id": "gs-market",
+      "name": "GS25 한끼점",
+      "category": "편의점",
+      "service": "shopping",
+      "rating": 4.9,
+      "minOrder": 0,
+      "open": true,
+      "eta": "약 25분"
+    },
+    {
+      "id": "fresh-market",
+      "name": "싱싱한 동네마트",
+      "category": "마트",
+      "service": "shopping",
+      "rating": 4.8,
+      "minOrder": 0,
+      "open": true,
+      "eta": "약 40분"
+    },
+    {
+      "id": "mcdonalds",
+      "name": "맥도날드",
+      "brand": "맥도날드",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://www.mcdonalds.co.kr/kor/menu/burger",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "burgerking",
+      "name": "버거킹",
+      "brand": "버거킹",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://web-prd.burgerking.co.kr/menu/main",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "lotteria",
+      "name": "롯데리아",
+      "brand": "롯데리아",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://img.lotteeatz.com/shopping/main",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "momstouch",
+      "name": "맘스터치",
+      "brand": "맘스터치",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://momstouch.co.kr/",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    },
+    {
+      "id": "kfc",
+      "name": "KFC",
+      "brand": "KFC",
+      "category": "패스트푸드",
+      "rating": null,
+      "minOrder": 0,
+      "open": true,
+      "eta": "준비 시간 확인",
+      "operationStatus": "prototype",
+      "sourceUrl": "https://www.kfckorea.com/kfc/index.asp",
+      "priceNote": "가상 주문용 참고 가격 · 실제 지점의 가격/주문 조건과 다를 수 있어요."
+    }
+  ],
+  "menus": [
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "dakgalbi",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/api/openApiInfo.do?svc_no=I2790",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-herbal",
+      "name": "몽촌 한방 닭갈비",
+      "price": 17000,
+      "nutrition": {
+        "calories": 600,
+        "carbs": 45,
+        "protein": 46,
+        "fat": 26
+      },
+      "nutritionBasis": "1인분 약 400g · 밥·추가 사리 제외",
+      "servings": 1,
+      "description": "한방 양념 닭갈비 · 2인분부터 주문",
+      "mainServings": 1,
+      "image": "/assets/food/mongchon-herbal.webp",
+      "defaultQuantity": 2
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "dakgalbi",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/api/openApiInfo.do?svc_no=I2790",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-spicy",
+      "name": "몽촌 매콤 닭갈비",
+      "price": 17000,
+      "nutrition": {
+        "calories": 620,
+        "carbs": 50,
+        "protein": 46,
+        "fat": 26
+      },
+      "nutritionBasis": "1인분 약 400g · 밥·추가 사리 제외",
+      "servings": 1,
+      "description": "매콤한 양념 닭갈비 · 2인분부터 주문",
+      "mainServings": 1,
+      "image": "/assets/food/mongchon-spicy.webp",
+      "defaultQuantity": 2
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "dakgalbi",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/api/openApiInfo.do?svc_no=I2790",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-takeout",
+      "name": "닭갈비 포장 2인분",
+      "price": 30000,
+      "nutrition": {
+        "calories": 1200,
+        "carbs": 90,
+        "protein": 92,
+        "fat": 52
+      },
+      "nutritionBasis": "포장 2인분 전체 약 800g · 밥 제외",
+      "servings": 2,
+      "description": "함께 나눠 먹는 포장 2인분",
+      "mainServings": 2,
+      "image": "/assets/food/mongchon-herbal.webp"
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "noodles",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "일반 칼국수에 들기름·양념·국물 구성을 가정한 추정",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-perilla-noodles",
+      "name": "들기름 비빔 칼국수",
+      "price": 9500,
+      "nutrition": {
+        "calories": 650,
+        "carbs": 105,
+        "protein": 16,
+        "fat": 18.4
+      },
+      "nutritionBasis": "들기름·양념 포함 1그릇 약 450g",
+      "servings": 1,
+      "description": "고소한 들기름을 곁들인 비빔 칼국수",
+      "mainServings": 0
+    },
+    {
+      "shopId": "mongchon-dakgalbi",
+      "kind": "noodles",
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 닭갈비 기준 추정 · 매장 실측값이 아니에요.",
+      "nutritionReference": "일반 칼국수에 들기름·양념·국물 구성을 가정한 추정",
+      "priceSource": "https://www.diningcode.com/profile.php?rid=zvkzD9pnpQyP",
+      "sourceCheckedAt": "2026-10-29",
+      "id": "mongchon-cold-noodles",
+      "name": "옛날 냉 칼국수",
+      "price": 9500,
+      "nutrition": {
+        "calories": 560,
+        "carbs": 110,
+        "protein": 17,
+        "fat": 5.8
+      },
+      "nutritionBasis": "국물 포함 1그릇 약 650g",
+      "servings": 1,
+      "description": "시원하게 즐기는 칼국수",
+      "mainServings": 0
+    },
+    {
+      "id": "bibimbap",
+      "shopId": "mint-kitchen",
+      "name": "채소 비빔밥",
+      "price": 11000,
+      "kind": "bowl",
+      "nutrition": {
+        "calories": 707,
+        "carbs": 114.8,
+        "protein": 19.9,
+        "fat": 18.6
+      },
+      "legacyNutrition": {
+        "calories": 620,
+        "carbs": 88,
+        "protein": 21,
+        "fat": 20
+      },
+      "nutritionBasis": "1그릇 약 500g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "salmon",
+      "shopId": "mint-kitchen",
+      "name": "연어 포케",
+      "price": 13500,
+      "kind": "salmon",
+      "nutrition": {
+        "calories": 650,
+        "carbs": 72,
+        "protein": 32,
+        "fat": 26
+      },
+      "legacyNutrition": {
+        "calories": 540,
+        "carbs": 54,
+        "protein": 32,
+        "fat": 22
+      },
+      "nutritionBasis": "밥·연어·채소·드레싱 포함 1그릇 약 450g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "noodles",
+      "shopId": "noodle-house",
+      "name": "잔치국수",
+      "price": 9000,
+      "kind": "noodles",
+      "nutrition": {
+        "calories": 599,
+        "carbs": 118.5,
+        "protein": 21.1,
+        "fat": 4.5
+      },
+      "legacyNutrition": {
+        "calories": 480,
+        "carbs": 83,
+        "protein": 16,
+        "fat": 8
+      },
+      "nutritionBasis": "국물 포함 1그릇 약 700g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/mkisna/2013.pdf"
+    },
+    {
+      "id": "chicken",
+      "shopId": "chicken-house",
+      "name": "후라이드 치킨",
+      "price": 22000,
+      "kind": "chicken",
+      "nutrition": {
+        "calories": 2100,
+        "carbs": 75,
+        "protein": 135,
+        "fat": 140
+      },
+      "legacyNutrition": {
+        "calories": 1840,
+        "carbs": 92,
+        "protein": 116,
+        "fat": 112
+      },
+      "nutritionBasis": "한 마리 전체 · 가식부 약 750g · 2~3인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "salad-poke",
+      "shopId": "mint-kitchen",
+      "name": "연어 샐러드 포케",
+      "price": 12500,
+      "kind": "salmon",
+      "nutrition": {
+        "calories": 450,
+        "carbs": 30,
+        "protein": 30,
+        "fat": 23.3
+      },
+      "description": "채소를 곁들여 골라보는 샐러드 포케",
+      "legacyNutrition": {
+        "calories": 480,
+        "carbs": 35,
+        "protein": 30,
+        "fat": 22
+      },
+      "nutritionBasis": "드레싱 포함 1그릇 약 350g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "soy-bowl",
+      "shopId": "mint-kitchen",
+      "name": "두부 버섯 덮밥",
+      "price": 10500,
+      "kind": "bowl",
+      "nutrition": {
+        "calories": 600,
+        "carbs": 80,
+        "protein": 25,
+        "fat": 20
+      },
+      "description": "고소한 두부와 버섯을 듬뿍 올린 한 그릇",
+      "legacyNutrition": {
+        "calories": 510,
+        "carbs": 70,
+        "protein": 25,
+        "fat": 16
+      },
+      "nutritionBasis": "밥·두부·버섯·소스 포함 1그릇 약 450g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "spicy-noodles",
+      "shopId": "noodle-house",
+      "name": "매콤 비빔국수",
+      "price": 9500,
+      "kind": "noodles",
+      "nutrition": {
+        "calories": 618,
+        "carbs": 109.9,
+        "protein": 18.8,
+        "fat": 11.5
+      },
+      "description": "새콤달콤한 양념과 아삭한 채소",
+      "legacyNutrition": {
+        "calories": 560,
+        "carbs": 91,
+        "protein": 17,
+        "fat": 11
+      },
+      "nutritionBasis": "양념 포함 1그릇 약 550g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "warm-noodles",
+      "shopId": "noodle-house",
+      "name": "진한 멸치국수",
+      "price": 9500,
+      "kind": "noodles",
+      "nutrition": {
+        "calories": 600,
+        "carbs": 114,
+        "protein": 22,
+        "fat": 6.2
+      },
+      "description": "따뜻한 멸치 육수로 속 편한 한 끼",
+      "legacyNutrition": {
+        "calories": 470,
+        "carbs": 80,
+        "protein": 17,
+        "fat": 8
+      },
+      "nutritionBasis": "국물 포함 1그릇 약 700g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/mkisna/2013.pdf"
+    },
+    {
+      "id": "crispy-original",
+      "shopId": "crispy-chicken",
+      "name": "황금 후라이드 치킨",
+      "price": 19000,
+      "kind": "fried",
+      "nutrition": {
+        "calories": 2100,
+        "carbs": 75,
+        "protein": 135,
+        "fat": 140
+      },
+      "description": "바삭한 튀김옷과 촉촉한 속살",
+      "legacyNutrition": {
+        "calories": 1750,
+        "carbs": 85,
+        "protein": 110,
+        "fat": 108
+      },
+      "nutritionBasis": "한 마리 전체 · 가식부 약 750g · 2~3인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "crispy-boneless",
+      "shopId": "crispy-chicken",
+      "name": "순살 후라이드",
+      "price": 21000,
+      "kind": "fried",
+      "nutrition": {
+        "calories": 2350,
+        "carbs": 110,
+        "protein": 140,
+        "fat": 150
+      },
+      "description": "먹기 편한 순살로 즐기는 바삭한 치킨",
+      "legacyNutrition": {
+        "calories": 1820,
+        "carbs": 97,
+        "protein": 106,
+        "fat": 116
+      },
+      "nutritionBasis": "순살 한 상자 전체 약 800g · 2~3인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "crispy-half",
+      "shopId": "crispy-chicken",
+      "name": "반반 치킨",
+      "price": 22000,
+      "kind": "fried",
+      "nutrition": {
+        "calories": 2400,
+        "carbs": 130,
+        "protein": 128,
+        "fat": 152
+      },
+      "description": "함께 나눠 먹기 좋은 인기 메뉴",
+      "legacyNutrition": {
+        "calories": 1910,
+        "carbs": 124,
+        "protein": 104,
+        "fat": 114
+      },
+      "nutritionBasis": "양념 포함 한 마리 전체 · 2~3인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "pizza-pepperoni",
+      "shopId": "pizza-club",
+      "name": "페퍼로니 피자",
+      "price": 18900,
+      "kind": "pizza",
+      "nutrition": {
+        "calories": 2240,
+        "carbs": 240,
+        "protein": 96,
+        "fat": 99.6
+      },
+      "description": "페퍼로니와 치즈를 가득 올렸어요",
+      "legacyNutrition": {
+        "calories": 1590,
+        "carbs": 162,
+        "protein": 62,
+        "fat": 74
+      },
+      "nutritionBasis": "라지 8조각 한 판 전체 · 2조각 약 560 kcal",
+      "servings": 4,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "pizza-cheese",
+      "shopId": "pizza-club",
+      "name": "더블 치즈 피자",
+      "price": 16900,
+      "kind": "pizza",
+      "nutrition": {
+        "calories": 2080,
+        "carbs": 232,
+        "protein": 96,
+        "fat": 85.3
+      },
+      "description": "진한 치즈를 두 배로 즐겨요",
+      "legacyNutrition": {
+        "calories": 1480,
+        "carbs": 156,
+        "protein": 67,
+        "fat": 66
+      },
+      "nutritionBasis": "라지 8조각 한 판 전체 · 2조각 약 520 kcal",
+      "servings": 4,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "pizza-set",
+      "shopId": "pizza-club",
+      "name": "피자 한 판 세트",
+      "price": 23900,
+      "kind": "pizza",
+      "nutrition": {
+        "calories": 2600,
+        "carbs": 335,
+        "protein": 98,
+        "fat": 96.4
+      },
+      "description": "함께 먹기 좋은 든든한 피자 세트",
+      "legacyNutrition": {
+        "calories": 1840,
+        "carbs": 202,
+        "protein": 71,
+        "fat": 82
+      },
+      "nutritionBasis": "라지 피자 1판·사이드·일반 콜라 500mL 전체",
+      "servings": 4,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "burger-classic",
+      "shopId": "burger-room",
+      "name": "클래식 치즈버거 세트",
+      "price": 10900,
+      "kind": "burger",
+      "nutrition": {
+        "calories": 1050,
+        "carbs": 135,
+        "protein": 36,
+        "fat": 40.7
+      },
+      "description": "치즈버거와 감자튀김, 음료까지",
+      "legacyNutrition": {
+        "calories": 920,
+        "carbs": 103,
+        "protein": 34,
+        "fat": 42
+      },
+      "nutritionBasis": "버거·중간 감자튀김·일반 콜라 355mL 세트",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "burger-double",
+      "shopId": "burger-room",
+      "name": "더블 패티 버거",
+      "price": 11900,
+      "kind": "burger",
+      "nutrition": {
+        "calories": 810,
+        "carbs": 53,
+        "protein": 48,
+        "fat": 45.1
+      },
+      "description": "두툼한 패티 두 장을 올린 버거",
+      "legacyNutrition": {
+        "calories": 810,
+        "carbs": 53,
+        "protein": 48,
+        "fat": 43
+      },
+      "nutritionBasis": "더블 패티 버거 단품 1개 약 300g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "burger-chicken",
+      "shopId": "burger-room",
+      "name": "크리스피 치킨버거",
+      "price": 8900,
+      "kind": "burger",
+      "nutrition": {
+        "calories": 650,
+        "carbs": 61,
+        "protein": 30,
+        "fat": 31.8
+      },
+      "description": "바삭한 치킨 패티와 신선한 채소",
+      "legacyNutrition": {
+        "calories": 650,
+        "carbs": 61,
+        "protein": 30,
+        "fat": 32
+      },
+      "nutritionBasis": "치킨버거 단품 1개 약 250g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "tteokbokki",
+      "shopId": "snack-lab",
+      "name": "국물 떡볶이",
+      "price": 8900,
+      "kind": "tteok",
+      "nutrition": {
+        "calories": 456,
+        "carbs": 90.8,
+        "protein": 11.4,
+        "fat": 5.3
+      },
+      "description": "매콤달콤한 국물과 쫄깃한 떡",
+      "legacyNutrition": {
+        "calories": 720,
+        "carbs": 137,
+        "protein": 15,
+        "fat": 12
+      },
+      "nutritionBasis": "국물·어묵 포함 1그릇 약 300g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "tteok-set",
+      "shopId": "snack-lab",
+      "name": "떡볶이와 튀김 세트",
+      "price": 13900,
+      "kind": "tteok",
+      "nutrition": {
+        "calories": 1050,
+        "carbs": 172,
+        "protein": 24,
+        "fat": 29.6
+      },
+      "description": "떡볶이에 바삭한 튀김을 곁들여요",
+      "legacyNutrition": {
+        "calories": 1120,
+        "carbs": 168,
+        "protein": 24,
+        "fat": 40
+      },
+      "nutritionBasis": "떡볶이 약 450g·튀김 약 150g 전체 · 2인분",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "kimchi-stew",
+      "shopId": "rice-table",
+      "name": "돼지고기 김치찌개",
+      "price": 10500,
+      "kind": "stew",
+      "nutrition": {
+        "calories": 553,
+        "carbs": 80,
+        "protein": 21,
+        "fat": 16.6
+      },
+      "description": "푹 익은 김치와 돼지고기, 공깃밥 포함",
+      "legacyNutrition": {
+        "calories": 670,
+        "carbs": 69,
+        "protein": 35,
+        "fat": 29
+      },
+      "nutritionBasis": "김치찌개 약 400g·공깃밥 210g 포함",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "soy-stew",
+      "shopId": "rice-table",
+      "name": "구수한 된장찌개",
+      "price": 9500,
+      "kind": "stew",
+      "nutrition": {
+        "calories": 455,
+        "carbs": 81.5,
+        "protein": 17.5,
+        "fat": 6.6
+      },
+      "description": "채소와 두부를 넣은 따뜻한 한 상",
+      "legacyNutrition": {
+        "calories": 550,
+        "carbs": 71,
+        "protein": 25,
+        "fat": 18
+      },
+      "nutritionBasis": "된장찌개 약 400g·공깃밥 210g 포함",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "https://www.foodsafetykorea.go.kr/upload/20150824/20150824011539_1440389739434.pdf"
+    },
+    {
+      "id": "pork-cutlet",
+      "shopId": "sushi-table",
+      "name": "등심 돈까스 정식",
+      "price": 12500,
+      "kind": "cutlet",
+      "nutrition": {
+        "calories": 1000,
+        "carbs": 115,
+        "protein": 40,
+        "fat": 42.2
+      },
+      "description": "바삭한 등심 돈까스와 밥, 샐러드",
+      "legacyNutrition": {
+        "calories": 870,
+        "carbs": 97,
+        "protein": 39,
+        "fat": 38
+      },
+      "nutritionBasis": "돈까스·밥·소스·샐러드 정식 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "salmon-sushi",
+      "shopId": "sushi-table",
+      "name": "생연어 초밥 10피스",
+      "price": 16900,
+      "kind": "sushi",
+      "nutrition": {
+        "calories": 650,
+        "carbs": 85,
+        "protein": 35,
+        "fat": 18.9
+      },
+      "description": "부드러운 생연어를 올린 초밥 한 접시",
+      "legacyNutrition": {
+        "calories": 690,
+        "carbs": 89,
+        "protein": 38,
+        "fat": 20
+      },
+      "nutritionBasis": "생연어 초밥 10피스 전체 약 350g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "sushi-combo",
+      "shopId": "sushi-table",
+      "name": "모둠 초밥 12피스",
+      "price": 18900,
+      "kind": "sushi",
+      "nutrition": {
+        "calories": 720,
+        "carbs": 105,
+        "protein": 38,
+        "fat": 16.4
+      },
+      "description": "다채로운 맛을 담은 모둠 초밥",
+      "legacyNutrition": {
+        "calories": 760,
+        "carbs": 102,
+        "protein": 42,
+        "fat": 21
+      },
+      "nutritionBasis": "모둠 초밥 12피스 전체 약 400g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "coffee-cake",
+      "shopId": "cafe-day",
+      "name": "라떼와 티라미수 세트",
+      "price": 10900,
+      "kind": "coffee",
+      "nutrition": {
+        "calories": 620,
+        "carbs": 67,
+        "protein": 13,
+        "fat": 33.3
+      },
+      "description": "고소한 라떼와 부드러운 티라미수",
+      "legacyNutrition": {
+        "calories": 540,
+        "carbs": 61,
+        "protein": 12,
+        "fat": 28
+      },
+      "nutritionBasis": "카페라떼 355mL·티라미수 1조각 120g",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "croissant-set",
+      "shopId": "cafe-day",
+      "name": "크루아상 브런치",
+      "price": 8900,
+      "kind": "bread",
+      "nutrition": {
+        "calories": 290,
+        "carbs": 31,
+        "protein": 6,
+        "fat": 15.8
+      },
+      "description": "겹겹이 바삭한 크루아상과 커피",
+      "legacyNutrition": {
+        "calories": 480,
+        "carbs": 49,
+        "protein": 10,
+        "fat": 27
+      },
+      "nutritionBasis": "크루아상 70g·무가당 아메리카노 1잔",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "tiramisu",
+      "shopId": "cafe-day",
+      "name": "티라미수 2개 세트",
+      "price": 12000,
+      "kind": "coffee",
+      "nutrition": {
+        "calories": 700,
+        "carbs": 70,
+        "protein": 12,
+        "fat": 41.3
+      },
+      "description": "달콤한 디저트를 나누는 시간",
+      "legacyNutrition": {
+        "calories": 650,
+        "carbs": 71,
+        "protein": 12,
+        "fat": 36
+      },
+      "nutritionBasis": "티라미수 120g 2개 전체 · 1개 약 350 kcal",
+      "servings": 2,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "mcdonalds-bigmac",
+      "shopId": "mcdonalds",
+      "name": "빅맥",
+      "price": 5700,
+      "kind": "burger",
+      "brand": "맥도날드",
+      "description": "쇠고기 패티 두 장과 치즈, 채소를 넣은 버거",
+      "nutrition": {
+        "calories": 580,
+        "carbs": 46,
+        "protein": 27,
+        "fat": 32.0
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.mcdonalds.co.kr/kor/menu/burger",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "mcdonalds-shanghai",
+      "shopId": "mcdonalds",
+      "name": "맥스파이시 상하이 버거",
+      "price": 5900,
+      "kind": "burger",
+      "brand": "맥도날드",
+      "description": "통닭가슴살 패티를 넣은 매콤한 치킨버거",
+      "nutrition": {
+        "calories": 500,
+        "carbs": 49,
+        "protein": 25,
+        "fat": 22.7
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.mcdonalds.co.kr/kor/menu/burger",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "mcdonalds-bigmac-set",
+      "shopId": "mcdonalds",
+      "name": "빅맥 세트",
+      "price": 8000,
+      "kind": "burger",
+      "brand": "맥도날드",
+      "description": "빅맥 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 1060,
+        "carbs": 132,
+        "protein": 32,
+        "fat": 44.9
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.mcdonalds.co.kr/kor/menu/burger",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "burgerking-whopper",
+      "shopId": "burgerking",
+      "name": "와퍼",
+      "price": 7400,
+      "kind": "burger",
+      "brand": "버거킹",
+      "description": "쇠고기 패티와 토마토, 양상추를 넣은 버거",
+      "nutrition": {
+        "calories": 620,
+        "carbs": 52,
+        "protein": 29,
+        "fat": 32.9
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://web-prd.burgerking.co.kr/menu/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "burgerking-cheese-whopper",
+      "shopId": "burgerking",
+      "name": "치즈와퍼",
+      "price": 8000,
+      "kind": "burger",
+      "brand": "버거킹",
+      "description": "와퍼에 치즈를 더한 버거",
+      "nutrition": {
+        "calories": 660,
+        "carbs": 53,
+        "protein": 32,
+        "fat": 35.6
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://web-prd.burgerking.co.kr/menu/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "burgerking-whopper-set",
+      "shopId": "burgerking",
+      "name": "와퍼 세트",
+      "price": 9900,
+      "kind": "burger",
+      "brand": "버거킹",
+      "description": "와퍼 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 1100,
+        "carbs": 138,
+        "protein": 34,
+        "fat": 45.8
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://web-prd.burgerking.co.kr/menu/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "lotteria-bulgogi",
+      "shopId": "lotteria",
+      "name": "리아불고기",
+      "price": 5100,
+      "kind": "burger",
+      "brand": "롯데리아",
+      "description": "불고기 소스와 패티, 채소를 넣은 버거",
+      "nutrition": {
+        "calories": 480,
+        "carbs": 52,
+        "protein": 20,
+        "fat": 21.3
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://img.lotteeatz.com/shopping/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "lotteria-shrimp",
+      "shopId": "lotteria",
+      "name": "리아새우",
+      "price": 5100,
+      "kind": "burger",
+      "brand": "롯데리아",
+      "description": "새우 패티와 양상추를 넣은 버거",
+      "nutrition": {
+        "calories": 490,
+        "carbs": 58,
+        "protein": 16,
+        "fat": 21.6
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://img.lotteeatz.com/shopping/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "lotteria-bulgogi-set",
+      "shopId": "lotteria",
+      "name": "리아불고기 세트",
+      "price": 7500,
+      "kind": "burger",
+      "brand": "롯데리아",
+      "description": "리아불고기 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 960,
+        "carbs": 138,
+        "protein": 25,
+        "fat": 34.2
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://img.lotteeatz.com/shopping/main",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "momstouch-thigh",
+      "shopId": "momstouch",
+      "name": "싸이버거",
+      "price": 5200,
+      "kind": "burger",
+      "brand": "맘스터치",
+      "description": "닭다리살 패티와 채소를 넣은 치킨버거",
+      "nutrition": {
+        "calories": 600,
+        "carbs": 58,
+        "protein": 28,
+        "fat": 28.4
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://momstouch.co.kr/",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "momstouch-white-garlic",
+      "shopId": "momstouch",
+      "name": "화이트갈릭버거",
+      "price": 5500,
+      "kind": "burger",
+      "brand": "맘스터치",
+      "description": "치킨 패티에 화이트갈릭 소스를 더한 버거",
+      "nutrition": {
+        "calories": 750,
+        "carbs": 66,
+        "protein": 35,
+        "fat": 38.4
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://momstouch.co.kr/",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "momstouch-thigh-set",
+      "shopId": "momstouch",
+      "name": "싸이버거 세트",
+      "price": 7600,
+      "kind": "burger",
+      "brand": "맘스터치",
+      "description": "싸이버거 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 1080,
+        "carbs": 144,
+        "protein": 33,
+        "fat": 41.3
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://momstouch.co.kr/",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "kfc-zinger",
+      "shopId": "kfc",
+      "name": "징거버거",
+      "price": 5900,
+      "kind": "burger",
+      "brand": "KFC",
+      "description": "닭가슴살 패티와 채소를 넣은 치킨버거",
+      "nutrition": {
+        "calories": 480,
+        "carbs": 46,
+        "protein": 30,
+        "fat": 19.6
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.kfckorea.com/kfc/index.asp",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "kfc-tower",
+      "shopId": "kfc",
+      "name": "타워버거",
+      "price": 6900,
+      "kind": "burger",
+      "brand": "KFC",
+      "description": "치킨 패티에 해시브라운과 치즈를 더한 버거",
+      "nutrition": {
+        "calories": 650,
+        "carbs": 65,
+        "protein": 34,
+        "fat": 28.2
+      },
+      "nutritionBasis": "버거 단품 1개 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.kfckorea.com/kfc/index.asp",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    },
+    {
+      "id": "kfc-zinger-set",
+      "shopId": "kfc",
+      "name": "징거버거 세트",
+      "price": 8200,
+      "kind": "burger",
+      "brand": "KFC",
+      "description": "징거버거 · 중간 감자튀김 · 일반 콜라 355mL",
+      "nutrition": {
+        "calories": 960,
+        "carbs": 132,
+        "protein": 35,
+        "fat": 32.4
+      },
+      "nutritionBasis": "버거 1개·중간 감자튀김·일반 콜라 355mL 전체",
+      "servings": 1,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "구성과 분량을 가정한 추정값 · 브랜드 공식 영양성분과 다를 수 있어요.",
+      "nutritionReference": "일반 버거·감자튀김·콜라 구성을 가정한 4/4/9 환산 추정. 공식 제품 측정값이 아님.",
+      "sourceUrl": "https://www.kfckorea.com/kfc/index.asp",
+      "priceSource": "prototype-reference",
+      "imageSource": "generic-illustration",
+      "priceNote": "가상 주문용 참고 가격 · 지점/배달 가격과 다를 수 있어요."
+    }
+  ],
+  "products": [
+    {
+      "id": "pb-eggs",
+      "shopId": "bmart",
+      "name": "PB 신선란",
+      "price": 4490,
+      "kind": "eggs",
+      "nutrition": {
+        "calories": 700,
+        "carbs": 4,
+        "protein": 63,
+        "fat": 48
+      },
+      "description": "",
+      "category": "우유·계란",
+      "unit": "10구",
+      "service": "shopping",
+      "pb": true,
+      "fixtureLabel": "PB 시연 상품"
+    },
+    {
+      "id": "pb-vegetables",
+      "shopId": "bmart",
+      "name": "PB 볶음밥용 다짐 채소",
+      "price": 2990,
+      "kind": "lettuce",
+      "nutrition": {
+        "calories": 90,
+        "carbs": 18,
+        "protein": 3,
+        "fat": 0.7
+      },
+      "description": "",
+      "category": "과일·채소",
+      "unit": "250g",
+      "service": "shopping",
+      "image": "/assets/chopped-vegetables.png",
+      "pb": true,
+      "fixtureLabel": "PB 시연 상품",
+      "legacyNutrition": {
+        "calories": 65,
+        "carbs": 12,
+        "protein": 4,
+        "fat": 1
+      },
+      "nutritionBasis": "다짐 채소 250g 한 팩 전체",
+      "servings": 3,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "fresh-eggs",
+      "shopId": "fresh-market",
+      "name": "우리동네 신선란",
+      "price": 4980,
+      "kind": "eggs",
+      "nutrition": {
+        "calories": 700,
+        "carbs": 4,
+        "protein": 63,
+        "fat": 48
+      },
+      "description": "",
+      "category": "우유·계란",
+      "unit": "10구",
+      "service": "shopping"
+    },
+    {
+      "id": "fresh-bread",
+      "shopId": "fresh-market",
+      "name": "샌드위치용 빵",
+      "price": 3980,
+      "kind": "bread",
+      "nutrition": {
+        "calories": 1200,
+        "carbs": 222,
+        "protein": 39,
+        "fat": 17.3
+      },
+      "description": "",
+      "category": "빵·간식",
+      "unit": "1봉",
+      "service": "shopping",
+      "legacyNutrition": {
+        "calories": 780,
+        "carbs": 84,
+        "protein": 15,
+        "fat": 45
+      },
+      "nutritionBasis": "식빵 1봉 약 450g 전체",
+      "servings": 9,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "apple",
+      "shopId": "bmart",
+      "name": "아삭한 사과",
+      "price": 6900,
+      "kind": "apple",
+      "nutrition": {
+        "calories": 312,
+        "carbs": 81.6,
+        "protein": 1.2,
+        "fat": 1.2
+      },
+      "description": "",
+      "category": "과일·채소",
+      "unit": "3입",
+      "service": "shopping",
+      "legacyNutrition": {
+        "calories": 285,
+        "carbs": 75,
+        "protein": 1,
+        "fat": 1
+      },
+      "nutritionBasis": "사과 3입 · 가식부 약 600g 전체",
+      "servings": 3,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "strawberry",
+      "shopId": "bmart",
+      "name": "한입 딸기",
+      "price": 9900,
+      "kind": "berry",
+      "nutrition": {
+        "calories": 160,
+        "carbs": 38,
+        "protein": 3,
+        "fat": 1
+      },
+      "description": "",
+      "category": "과일·채소",
+      "unit": "500g",
+      "service": "shopping"
+    },
+    {
+      "id": "milk",
+      "shopId": "bmart",
+      "name": "[배민이지] 갓 짜낸 1급A 우유",
+      "price": 1990,
+      "listPrice": 2290,
+      "discountPercent": 13,
+      "kind": "milk",
+      "image": "/assets/captured/easy-milk-observed.png",
+      "category": "우유·계란",
+      "unit": "900mL",
+      "service": "shopping",
+      "brand": "배민이지",
+      "pb": true,
+      "nutrition": null,
+      "nutritionStatus": "not-provided",
+      "priceSource": "mirroring-observed",
+      "observedAt": "2026-10-26",
+      "storage": "냉장",
+      "lowestPriceChallenge": true,
+      "featuredOrder": 1,
+      "productSource": "E05-milk-detail"
+    },
+    {
+      "id": "baemin-easy-sundae",
+      "shopId": "bmart",
+      "name": "[냉동][배민이지] 순대많이 얼큰 순대국",
+      "price": 5490,
+      "kind": "stew",
+      "image": "/assets/captured/easy-sundae-observed.png",
+      "category": "라면·간편식",
+      "unit": "700g",
+      "service": "shopping",
+      "brand": "배민이지",
+      "pb": true,
+      "nutrition": null,
+      "nutritionStatus": "not-provided",
+      "priceSource": "mirroring-observed",
+      "observedAt": "2026-10-26",
+      "storage": "냉동",
+      "lowestPriceChallenge": true,
+      "featuredOrder": 2,
+      "productSource": "E01-search; E02-sundae-detail"
+    },
+    {
+      "id": "baemin-easy-pork-gukbap",
+      "shopId": "bmart",
+      "name": "[냉동][배민이지] 부산식 돼지수육국밥",
+      "price": 5460,
+      "kind": "stew",
+      "image": "/assets/captured/easy-pork-gukbap-observed.png",
+      "category": "라면·간편식",
+      "unit": "700g",
+      "service": "shopping",
+      "brand": "배민이지",
+      "pb": true,
+      "nutrition": null,
+      "nutritionStatus": "not-provided",
+      "priceSource": "mirroring-observed",
+      "observedAt": "2026-10-26",
+      "storage": "냉동",
+      "lowestPriceChallenge": true,
+      "featuredOrder": 3,
+      "productSource": "E01-search"
+    },
+    {
+      "id": "baemin-easy-tofu",
+      "shopId": "bmart",
+      "name": "[배민이지] 찌개와 부침 겸용 만능 두부",
+      "price": 1980,
+      "kind": "tofu",
+      "image": "/assets/baemin-easy-tofu.png",
+      "category": "우유·계란",
+      "unit": "300g",
+      "service": "shopping",
+      "brand": "배민이지",
+      "pb": true,
+      "nutrition": null,
+      "nutritionStatus": "not-provided",
+      "priceSource": "fixture",
+      "productSource": "https://www.ceoscoredaily.com/page/view/2026082013455095015"
+    },
+    {
+      "id": "eggs",
+      "shopId": "bmart",
+      "name": "신선란",
+      "price": 4980,
+      "kind": "eggs",
+      "nutrition": {
+        "calories": 700,
+        "carbs": 4,
+        "protein": 63,
+        "fat": 48
+      },
+      "description": "",
+      "category": "우유·계란",
+      "unit": "10구",
+      "service": "shopping"
+    },
+    {
+      "id": "lettuce",
+      "shopId": "bmart",
+      "name": "무농약 상추",
+      "price": 2480,
+      "kind": "lettuce",
+      "nutrition": {
+        "calories": 23,
+        "carbs": 4,
+        "protein": 2,
+        "fat": 0.3
+      },
+      "description": "",
+      "category": "과일·채소",
+      "unit": "150g",
+      "service": "shopping"
+    },
+    {
+      "id": "pork",
+      "shopId": "bmart",
+      "name": "국내산 삼겹살",
+      "price": 12900,
+      "kind": "pork",
+      "nutrition": {
+        "calories": 1320,
+        "carbs": 0,
+        "protein": 68,
+        "fat": 116
+      },
+      "description": "",
+      "category": "정육·수산",
+      "unit": "400g",
+      "service": "shopping"
+    },
+    {
+      "id": "ramyeon",
+      "shopId": "bmart",
+      "name": "얼큰한 라면 멀티팩",
+      "price": 3980,
+      "kind": "ramyeon",
+      "nutrition": {
+        "calories": 2500,
+        "carbs": 390,
+        "protein": 50,
+        "fat": 85
+      },
+      "description": "",
+      "category": "라면·간편식",
+      "unit": "5입",
+      "service": "shopping"
+    },
+    {
+      "id": "bread",
+      "shopId": "bmart",
+      "name": "버터 크루아상",
+      "price": 4980,
+      "kind": "bread",
+      "nutrition": {
+        "calories": 780,
+        "carbs": 84,
+        "protein": 15,
+        "fat": 45
+      },
+      "description": "",
+      "category": "빵·간식",
+      "unit": "3입",
+      "service": "shopping"
+    },
+    {
+      "id": "cu-milk",
+      "shopId": "cu-market",
+      "name": "고소한 우유",
+      "price": 2900,
+      "kind": "milk",
+      "nutrition": {
+        "calories": 576,
+        "carbs": 43,
+        "protein": 29,
+        "fat": 32
+      },
+      "description": "",
+      "category": "우유·계란",
+      "unit": "900mL",
+      "service": "shopping"
+    },
+    {
+      "id": "cu-ramyeon",
+      "shopId": "cu-market",
+      "name": "출출할 땐 라면",
+      "price": 1600,
+      "kind": "ramyeon",
+      "nutrition": {
+        "calories": 500,
+        "carbs": 78,
+        "protein": 10,
+        "fat": 17
+      },
+      "description": "",
+      "category": "라면·간편식",
+      "unit": "1입",
+      "service": "shopping"
+    },
+    {
+      "id": "gs-bread",
+      "shopId": "gs-market",
+      "name": "바삭한 크루아상",
+      "price": 2200,
+      "kind": "bread",
+      "nutrition": {
+        "calories": 260,
+        "carbs": 28,
+        "protein": 5,
+        "fat": 15
+      },
+      "description": "",
+      "category": "빵·간식",
+      "unit": "1입",
+      "service": "shopping"
+    },
+    {
+      "id": "gs-eggs",
+      "shopId": "gs-market",
+      "name": "신선한 계란",
+      "price": 5400,
+      "kind": "eggs",
+      "nutrition": {
+        "calories": 700,
+        "carbs": 4,
+        "protein": 63,
+        "fat": 48
+      },
+      "description": "",
+      "category": "우유·계란",
+      "unit": "10구",
+      "service": "shopping"
+    },
+    {
+      "id": "fresh-apple",
+      "shopId": "fresh-market",
+      "name": "가정용 사과",
+      "price": 7900,
+      "kind": "apple",
+      "nutrition": {
+        "calories": 416,
+        "carbs": 108.8,
+        "protein": 1.6,
+        "fat": 1.6
+      },
+      "description": "",
+      "category": "과일·채소",
+      "unit": "4입",
+      "service": "shopping",
+      "legacyNutrition": {
+        "calories": 380,
+        "carbs": 100,
+        "protein": 1,
+        "fat": 1
+      },
+      "nutritionBasis": "사과 4입 · 가식부 약 800g 전체",
+      "servings": 4,
+      "nutritionStatus": "estimated",
+      "nutritionRevision": "2026-10-29-v1",
+      "nutritionNote": "일반 음식 기준 추정값 · 조리법과 제공량에 따라 달라요.",
+      "nutritionReference": "일반 음식 구성·분량을 가정한 탄단지 4/4/9 환산 추정"
+    },
+    {
+      "id": "fresh-lettuce",
+      "shopId": "fresh-market",
+      "name": "오늘 수확한 상추",
+      "price": 1980,
+      "kind": "lettuce",
+      "nutrition": {
+        "calories": 23,
+        "carbs": 4,
+        "protein": 2,
+        "fat": 0.3
+      },
+      "description": "",
+      "category": "과일·채소",
+      "unit": "150g",
+      "service": "shopping"
+    },
+    {
+      "id": "fresh-pork",
+      "shopId": "fresh-market",
+      "name": "도톰한 삼겹살",
+      "price": 14900,
+      "kind": "pork",
+      "nutrition": {
+        "calories": 1650,
+        "carbs": 0,
+        "protein": 85,
+        "fat": 145
+      },
+      "description": "",
+      "category": "정육·수산",
+      "unit": "500g",
+      "service": "shopping"
+    },
+    {
+      "id": "gs-berry",
+      "shopId": "gs-market",
+      "name": "달콤한 딸기",
+      "price": 8900,
+      "kind": "berry",
+      "nutrition": {
+        "calories": 128,
+        "carbs": 30,
+        "protein": 2,
+        "fat": 1
+      },
+      "description": "",
+      "category": "과일·채소",
+      "unit": "400g",
+      "service": "shopping"
+    }
+  ],
+  "categories": [
+    [
+      "전체",
+      "🍽️"
+    ],
+    [
+      "치킨",
+      "🍗"
+    ],
+    [
+      "카페·디저트",
+      "🧋"
+    ],
+    [
+      "피자",
+      "🍕"
+    ],
+    [
+      "찜·탕",
+      "🍲"
+    ],
+    [
+      "돈까스·회",
+      "🍣"
+    ],
+    [
+      "한식",
+      "🍚"
+    ],
+    [
+      "면요리",
+      "🍜"
+    ],
+    [
+      "패스트푸드",
+      "🍔"
+    ],
+    [
+      "분식",
+      "🍢"
+    ]
+  ],
+  "marketCategories": [
+    "전체",
+    "배민이지",
+    "과일·채소",
+    "우유·계란",
+    "정육·수산",
+    "라면·간편식",
+    "빵·간식"
+  ],
+  "recipes": [
+    {
+      "id": "pb-rice",
+      "name": "달걀 채소 볶음밥",
+      "subtitle": "오늘 한 끼는 직접 만들어볼까요?",
+      "minutes": 10,
+      "shopId": "bmart",
+      "couponId": "issued-pb",
+      "kind": "bowl",
+      "servings": 1,
+      "difficulty": "쉬움",
+      "description": "달걀은 부드럽게, 채소는 아삭하게. 밥 한 공기로 준비하는 한 그릇이에요.",
+      "amounts": [
+        "달걀 2개",
+        "채소 약 80g",
+        "상추 2장"
+      ],
+      "items": [
+        {
+          "menuId": "pb-eggs",
+          "quantity": 1
+        },
+        {
+          "menuId": "pb-vegetables",
+          "quantity": 1
+        },
+        {
+          "menuId": "lettuce",
+          "quantity": 1
+        }
+      ],
+      "pantry": "밥·식용유·기본 양념은 집에 있는 재료를 사용해요.",
+      "steps": [
+        "다짐 채소는 볶을 만큼 덜어 준비해요. 상추는 씻어 물기를 빼고 마지막에 곁들일 크기로 잘라요.",
+        "그릇에 달걀 2개를 풀어요. 팬을 중불로 달군 뒤 식용유를 두르고 달걀을 저어 완전히 익혀 따로 덜어둬요.",
+        "같은 팬에 채소를 넣고 2~3분 볶아요. 채소에서 나온 물기가 잦아들 때까지 볶아주세요.",
+        "밥 한 공기를 넣고 뭉친 밥을 풀어가며 볶아요. 간장 1작은술을 넣고 맛을 본 뒤 필요한 만큼만 더해요.",
+        "덜어둔 달걀을 다시 넣고 고루 섞어요. 불을 끄고 상추를 곁들여 마무리해요."
+      ],
+      "stepTitles": [
+        "재료 손질",
+        "달걀 먼저 익히기",
+        "채소 볶기",
+        "밥과 간장 넣기",
+        "한 그릇 완성"
+      ],
+      "tips": "찬밥을 쓰면 밥알이 덜 뭉쳐요. 물기 있는 채소는 먼저 충분히 볶아주세요.",
+      "note": "구매 가격은 재료 한 팩씩의 합계예요. 한 끼 분량의 가격과는 달라요."
+    },
+    {
+      "id": "market-sandwich",
+      "name": "달걀 채소 샌드위치",
+      "subtitle": "장보기로 준비하는 다음 식사",
+      "minutes": 15,
+      "shopId": "fresh-market",
+      "couponId": "issued-market",
+      "kind": "bread",
+      "servings": 1,
+      "difficulty": "쉬움",
+      "description": "달걀과 채소를 차곡차곡. 팬 하나로 준비하는 간단한 샌드위치예요.",
+      "amounts": [
+        "달걀 2개",
+        "빵 2장",
+        "상추 2~3장"
+      ],
+      "items": [
+        {
+          "menuId": "fresh-eggs",
+          "quantity": 1
+        },
+        {
+          "menuId": "fresh-bread",
+          "quantity": 1
+        },
+        {
+          "menuId": "fresh-lettuce",
+          "quantity": 1
+        }
+      ],
+      "pantry": "소금·후추 등 기본 양념은 집에 있는 재료를 사용해요.",
+      "steps": [
+        "상추를 한 장씩 씻고 물기를 충분히 털어요. 키친타월로 한 번 더 닦으면 빵이 눅눅해지지 않아요.",
+        "달걀 2개를 풀어 소금과 후추로 간해요. 중약불의 팬에 식용유를 조금 두르고 속까지 완전히 익혀요.",
+        "빵 2장을 마른 팬에 앞뒤로 살짝 구워요. 구운 빵은 잠시 식혀 수증기를 날려주세요.",
+        "빵 위에 상추와 달걀을 차례로 올려요. 집에 소스가 있다면 취향에 맞춰 소량 더해요.",
+        "나머지 빵을 덮고 살짝 눌러 고정해요. 반으로 잘라 접시에 담고 남은 재료는 따로 보관해요."
+      ],
+      "stepTitles": [
+        "채소 준비",
+        "달걀 익히기",
+        "빵 굽기",
+        "차곡차곡 쌓기",
+        "잘라서 마무리"
+      ],
+      "tips": "채소와 달걀의 물기·열기를 조금 빼고 쌓으면 먹기 편해요.",
+      "note": "재료 포장 단위 기준의 장바구니 가격이에요."
+    }
+  ],
+  "nutritionReference": {
+    "year": 2025,
+    "source": "https://www.kns.or.kr/fileroom/fileroom_view.asp?BoardID=Kdr&idx=168",
+    "ranges": {
+      "carbs": [
+        50,
+        65
+      ],
+      "protein": [
+        10,
+        20
+      ],
+      "fat": [
+        15,
+        30
+      ]
+    }
+  },
+  "state": {
+    "version": 1,
+    "month": "2026-10",
+    "selectedDate": "2026-10-26",
+    "view": "week",
+    "membership": {
+      "baeminClub": false
+    },
+    "coupons": [
+      {
+        "id": "issued-greens",
+        "title": "포케·샐러드 2,000원",
+        "description": "포케·샐러드와 채소 메뉴에 쓸 수 있어요",
+        "shopId": "mint-kitchen",
+        "service": "delivery",
+        "discount": 2000,
+        "minOrder": 10000,
+        "allowedMenuIds": [
+          "salmon",
+          "salad-poke",
+          "soy-bowl"
+        ],
+        "issuedAt": "2026-10-16",
+        "expiresAt": "2026-10-29",
+        "seenAt": null,
+        "usedAt": null,
+        "source": "fixture"
+      },
+      {
+        "id": "issued-pb",
+        "title": "B마트 PB 장보기 3,000원",
+        "description": "PB 상품을 포함해 9,000원 이상 담으면",
+        "shopId": "bmart",
+        "service": "shopping",
+        "discount": 3000,
+        "minOrder": 9000,
+        "requiredMenuIds": [
+          "pb-eggs",
+          "pb-vegetables",
+          "milk",
+          "baemin-easy-sundae",
+          "baemin-easy-pork-gukbap",
+          "baemin-easy-tofu"
+        ],
+        "issuedAt": "2026-10-19",
+        "expiresAt": "2026-10-31",
+        "seenAt": null,
+        "usedAt": null,
+        "source": "fixture"
+      },
+      {
+        "id": "issued-market",
+        "title": "동네마트 장보기 1,000원",
+        "description": "싱싱한 동네마트에서 10,000원 이상",
+        "shopId": "fresh-market",
+        "service": "shopping",
+        "discount": 1000,
+        "minOrder": 10000,
+        "issuedAt": "2026-10-21",
+        "expiresAt": "2026-11-02",
+        "seenAt": null,
+        "usedAt": null,
+        "source": "fixture"
+      }
+    ],
+    "orders": [
+      {
+        "id": "seed-order-8",
+        "attemptId": "seed-attempt-8",
+        "shopId": "noodle-house",
+        "shopName": "한그릇 국수",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-10-26T12:00:00+09:00",
+        "status": "delivered",
+        "items": [
+          {
+            "id": "seed-order-8-0",
+            "menuId": "noodles",
+            "name": "잔치국수",
+            "kind": "noodles",
+            "image": null,
+            "unitPrice": 9000,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 480,
+              "carbs": 83,
+              "protein": 16,
+              "fat": 8
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 9000,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 9000,
+          "refunded": 0
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-10-26T12:00:00+09:00"
+          },
+          {
+            "status": "preparing",
+            "at": "2026-10-26T12:10:00+09:00"
+          },
+          {
+            "status": "delivering",
+            "at": "2026-10-26T12:20:00+09:00"
+          },
+          {
+            "status": "delivered",
+            "at": "2026-10-26T12:30:00+09:00"
+          }
+        ],
+        "completedAt": "2026-10-26T12:30:00+09:00"
+      },
+      {
+        "id": "seed-order-7",
+        "attemptId": "seed-attempt-7",
+        "shopId": "mint-kitchen",
+        "shopName": "민트키친",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-10-23T18:00:00+09:00",
+        "status": "delivered",
+        "items": [
+          {
+            "id": "seed-order-7-0",
+            "menuId": "salmon",
+            "name": "연어 포케",
+            "kind": "salmon",
+            "image": null,
+            "unitPrice": 13500,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 540,
+              "carbs": 54,
+              "protein": 32,
+              "fat": 22
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 13500,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 13500,
+          "refunded": 0
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-10-23T18:00:00+09:00"
+          },
+          {
+            "status": "preparing",
+            "at": "2026-10-23T18:10:00+09:00"
+          },
+          {
+            "status": "delivering",
+            "at": "2026-10-23T18:20:00+09:00"
+          },
+          {
+            "status": "delivered",
+            "at": "2026-10-23T18:30:00+09:00"
+          }
+        ],
+        "completedAt": "2026-10-23T18:30:00+09:00"
+      },
+      {
+        "id": "seed-order-6",
+        "attemptId": "seed-attempt-6",
+        "shopId": "mint-kitchen",
+        "shopName": "민트키친",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-10-21T12:00:00+09:00",
+        "status": "delivered",
+        "items": [
+          {
+            "id": "seed-order-6-0",
+            "menuId": "bibimbap",
+            "name": "채소 비빔밥",
+            "kind": "bowl",
+            "image": null,
+            "unitPrice": 11000,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 620,
+              "carbs": 88,
+              "protein": 21,
+              "fat": 20
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 11000,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 11000,
+          "refunded": 0
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-10-21T12:00:00+09:00"
+          },
+          {
+            "status": "preparing",
+            "at": "2026-10-21T12:10:00+09:00"
+          },
+          {
+            "status": "delivering",
+            "at": "2026-10-21T12:20:00+09:00"
+          },
+          {
+            "status": "delivered",
+            "at": "2026-10-21T12:30:00+09:00"
+          }
+        ],
+        "completedAt": "2026-10-21T12:30:00+09:00"
+      },
+      {
+        "id": "seed-order-5",
+        "attemptId": "seed-attempt-5",
+        "shopId": "noodle-house",
+        "shopName": "한그릇 국수",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-10-12T18:00:00+09:00",
+        "status": "delivered",
+        "items": [
+          {
+            "id": "seed-order-5-0",
+            "menuId": "noodles",
+            "name": "잔치국수",
+            "kind": "noodles",
+            "image": null,
+            "unitPrice": 9000,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 480,
+              "carbs": 83,
+              "protein": 16,
+              "fat": 8
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 9000,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 9000,
+          "refunded": 0
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-10-12T18:00:00+09:00"
+          },
+          {
+            "status": "preparing",
+            "at": "2026-10-12T18:10:00+09:00"
+          },
+          {
+            "status": "delivering",
+            "at": "2026-10-12T18:20:00+09:00"
+          },
+          {
+            "status": "delivered",
+            "at": "2026-10-12T18:30:00+09:00"
+          }
+        ],
+        "completedAt": "2026-10-12T18:30:00+09:00"
+      },
+      {
+        "id": "seed-order-4",
+        "attemptId": "seed-attempt-4",
+        "shopId": "mint-kitchen",
+        "shopName": "민트키친",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-10-03T12:00:00+09:00",
+        "status": "cancelled",
+        "items": [
+          {
+            "id": "seed-order-4-0",
+            "menuId": "salmon",
+            "name": "연어 포케",
+            "kind": "salmon",
+            "image": null,
+            "unitPrice": 13500,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 540,
+              "carbs": 54,
+              "protein": 32,
+              "fat": 22
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 13500,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 13500,
+          "refunded": 13500
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-10-03T12:00:00+09:00"
+          },
+          {
+            "status": "cancelled",
+            "at": "2026-10-03T12:01:00+09:00"
+          }
+        ],
+        "completedAt": null
+      },
+      {
+        "id": "seed-order-3",
+        "attemptId": "seed-attempt-3",
+        "shopId": "mint-kitchen",
+        "shopName": "민트키친",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-09-21T18:00:00+09:00",
+        "status": "delivered",
+        "items": [
+          {
+            "id": "seed-order-3-0",
+            "menuId": "bibimbap",
+            "name": "채소 비빔밥",
+            "kind": "bowl",
+            "image": null,
+            "unitPrice": 11000,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 620,
+              "carbs": 88,
+              "protein": 21,
+              "fat": 20
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 11000,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 11000,
+          "refunded": 0
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-09-21T18:00:00+09:00"
+          },
+          {
+            "status": "preparing",
+            "at": "2026-09-21T18:10:00+09:00"
+          },
+          {
+            "status": "delivering",
+            "at": "2026-09-21T18:20:00+09:00"
+          },
+          {
+            "status": "delivered",
+            "at": "2026-09-21T18:30:00+09:00"
+          }
+        ],
+        "completedAt": "2026-09-21T18:30:00+09:00"
+      },
+      {
+        "id": "seed-order-2",
+        "attemptId": "seed-attempt-2",
+        "shopId": "noodle-house",
+        "shopName": "한그릇 국수",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-09-09T12:00:00+09:00",
+        "status": "delivered",
+        "items": [
+          {
+            "id": "seed-order-2-0",
+            "menuId": "noodles",
+            "name": "잔치국수",
+            "kind": "noodles",
+            "image": null,
+            "unitPrice": 9000,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 480,
+              "carbs": 83,
+              "protein": 16,
+              "fat": 8
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 9000,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 9000,
+          "refunded": 0
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-09-09T12:00:00+09:00"
+          },
+          {
+            "status": "preparing",
+            "at": "2026-09-09T12:10:00+09:00"
+          },
+          {
+            "status": "delivering",
+            "at": "2026-09-09T12:20:00+09:00"
+          },
+          {
+            "status": "delivered",
+            "at": "2026-09-09T12:30:00+09:00"
+          }
+        ],
+        "completedAt": "2026-09-09T12:30:00+09:00"
+      },
+      {
+        "id": "seed-order-1",
+        "attemptId": "seed-attempt-1",
+        "shopId": "mint-kitchen",
+        "shopName": "민트키친",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-09-03T18:00:00+09:00",
+        "status": "delivered",
+        "items": [
+          {
+            "id": "seed-order-1-0",
+            "menuId": "salmon",
+            "name": "연어 포케",
+            "kind": "salmon",
+            "image": null,
+            "unitPrice": 13500,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 540,
+              "carbs": 54,
+              "protein": 32,
+              "fat": 22
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 13500,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 13500,
+          "refunded": 0
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-09-03T18:00:00+09:00"
+          },
+          {
+            "status": "preparing",
+            "at": "2026-09-03T18:10:00+09:00"
+          },
+          {
+            "status": "delivering",
+            "at": "2026-09-03T18:20:00+09:00"
+          },
+          {
+            "status": "delivered",
+            "at": "2026-09-03T18:30:00+09:00"
+          }
+        ],
+        "completedAt": "2026-09-03T18:30:00+09:00"
+      },
+      {
+        "id": "seed-order-0",
+        "attemptId": "seed-attempt-0",
+        "shopId": "mint-kitchen",
+        "shopName": "민트키친",
+        "service": "delivery",
+        "fulfillment": "delivery",
+        "placedAt": "2026-09-03T12:00:00+09:00",
+        "status": "delivered",
+        "items": [
+          {
+            "id": "seed-order-0-0",
+            "menuId": "bibimbap",
+            "name": "채소 비빔밥",
+            "kind": "bowl",
+            "image": null,
+            "unitPrice": 11000,
+            "quantity": 1,
+            "nutrition": {
+              "calories": 620,
+              "carbs": 88,
+              "protein": 21,
+              "fat": 20
+            }
+          }
+        ],
+        "coupon": null,
+        "amount": {
+          "subtotal": 11000,
+          "deliveryFee": 0,
+          "discount": 0,
+          "paid": 11000,
+          "refunded": 0
+        },
+        "nutritionSource": {
+          "type": "baemin-fixture",
+          "label": "배민 제공 데이터 · 시연값",
+          "version": "menu-demo-2026-10"
+        },
+        "history": [
+          {
+            "status": "pending",
+            "at": "2026-09-03T12:00:00+09:00"
+          },
+          {
+            "status": "preparing",
+            "at": "2026-09-03T12:10:00+09:00"
+          },
+          {
+            "status": "delivering",
+            "at": "2026-09-03T12:20:00+09:00"
+          },
+          {
+            "status": "delivered",
+            "at": "2026-09-03T12:30:00+09:00"
+          }
+        ],
+        "completedAt": "2026-09-03T12:30:00+09:00"
+      }
+    ],
+    "records": [
+      {
+        "id": "seed-record-0",
+        "orderId": "seed-order-0",
+        "date": "2026-09-03",
+        "name": "채소 비빔밥",
+        "kind": "bowl",
+        "source": "baemin-fixture",
+        "sourceLabel": "배민 제공 데이터 · 시연값",
+        "nutrition": {
+          "calories": 620,
+          "carbs": 88,
+          "protein": 21,
+          "fat": 20
+        },
+        "portion": 1,
+        "restaurant": "민트키친",
+        "image": null,
+        "confirmed": true
+      },
+      {
+        "id": "seed-record-1",
+        "orderId": "seed-order-1",
+        "date": "2026-09-03",
+        "name": "연어 포케",
+        "kind": "salmon",
+        "source": "baemin-fixture",
+        "sourceLabel": "배민 제공 데이터 · 시연값",
+        "nutrition": {
+          "calories": 540,
+          "carbs": 54,
+          "protein": 32,
+          "fat": 22
+        },
+        "portion": 1,
+        "restaurant": "민트키친",
+        "image": null,
+        "confirmed": true
+      },
+      {
+        "id": "seed-record-2",
+        "orderId": "seed-order-2",
+        "date": "2026-09-09",
+        "name": "잔치국수",
+        "kind": "noodles",
+        "source": "baemin-fixture",
+        "sourceLabel": "배민 제공 데이터 · 시연값",
+        "nutrition": {
+          "calories": 480,
+          "carbs": 83,
+          "protein": 16,
+          "fat": 8
+        },
+        "portion": 1,
+        "restaurant": "한그릇 국수",
+        "image": null,
+        "confirmed": true
+      },
+      {
+        "id": "seed-record-3",
+        "orderId": "seed-order-3",
+        "date": "2026-09-21",
+        "name": "채소 비빔밥",
+        "kind": "bowl",
+        "source": "baemin-fixture",
+        "sourceLabel": "배민 제공 데이터 · 시연값",
+        "nutrition": {
+          "calories": 620,
+          "carbs": 88,
+          "protein": 21,
+          "fat": 20
+        },
+        "portion": 1,
+        "restaurant": "민트키친",
+        "image": null,
+        "confirmed": true
+      },
+      {
+        "id": "seed-record-5",
+        "orderId": "seed-order-5",
+        "date": "2026-10-12",
+        "name": "잔치국수",
+        "kind": "noodles",
+        "source": "baemin-fixture",
+        "sourceLabel": "배민 제공 데이터 · 시연값",
+        "nutrition": {
+          "calories": 480,
+          "carbs": 83,
+          "protein": 16,
+          "fat": 8
+        },
+        "portion": 1,
+        "restaurant": "한그릇 국수",
+        "image": null,
+        "confirmed": true
+      },
+      {
+        "id": "seed-record-6",
+        "orderId": "seed-order-6",
+        "date": "2026-10-21",
+        "name": "채소 비빔밥",
+        "kind": "bowl",
+        "source": "baemin-fixture",
+        "sourceLabel": "배민 제공 데이터 · 시연값",
+        "nutrition": {
+          "calories": 620,
+          "carbs": 88,
+          "protein": 21,
+          "fat": 20
+        },
+        "portion": 1,
+        "restaurant": "민트키친",
+        "image": null,
+        "confirmed": true
+      },
+      {
+        "id": "seed-record-8",
+        "orderId": "seed-order-8",
+        "date": "2026-10-26",
+        "name": "잔치국수",
+        "kind": "noodles",
+        "source": "baemin-fixture",
+        "sourceLabel": "배민 제공 데이터 · 시연값",
+        "nutrition": {
+          "calories": 480,
+          "carbs": 83,
+          "protein": 16,
+          "fat": 8
+        },
+        "portion": 1,
+        "restaurant": "한그릇 국수",
+        "image": null,
+        "confirmed": true
+      }
+    ],
+    "favorites": [
+      "mint-kitchen",
+      "chicken-house"
+    ],
+    "reviews": [
+      {
+        "orderId": "seed-order-6",
+        "rating": 5,
+        "text": "맛있게 먹었어요. (시연 리뷰)"
+      }
+    ],
+    "events": [
+      "seed-order-0step0",
+      "seed-order-0step1",
+      "seed-order-0step2",
+      "seed-order-1step0",
+      "seed-order-1step1",
+      "seed-order-1step2",
+      "seed-order-2step0",
+      "seed-order-2step1",
+      "seed-order-2step2",
+      "seed-order-3step0",
+      "seed-order-3step1",
+      "seed-order-3step2",
+      "seed-order-4cancel",
+      "seed-order-5step0",
+      "seed-order-5step1",
+      "seed-order-5step2",
+      "seed-order-6step0",
+      "seed-order-6step1",
+      "seed-order-6step2",
+      "seed-order-7step0",
+      "seed-order-7step1",
+      "seed-order-7step2",
+      "seed-order-8step0",
+      "seed-order-8step1",
+      "seed-order-8step2"
+    ],
+    "pointLedger": []
+  },
+  "nutritionRevision": "2026-10-29-v1"
+}

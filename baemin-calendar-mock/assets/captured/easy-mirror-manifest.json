@@ -1,0 +1,86 @@
+{
+  "observedDate": "2026-10-26",
+  "method": "CUA native iPhone Mirroring capture; crop with limited control-backdrop repair",
+  "assets": [
+    {
+      "asset": "easy-milk-observed.png",
+      "source": "E05-milk-detail.png",
+      "sourceSha256": "1d6a3e2520a3c236522ea050dd75d3b2240183df8f89d9834099d495f8622477",
+      "crop": [
+        16,
+        235,
+        620,
+        839
+      ],
+      "size": [
+        604,
+        604
+      ],
+      "uiBackdropRepairs": [
+        [
+          506,
+          507,
+          594,
+          593
+        ],
+        [
+          18,
+          538,
+          128,
+          588
+        ]
+      ],
+      "cursorRepairSource": null,
+      "outputSha256": "539a17fb06dbe81f9891322ba7e4df3332fd662c50c4d5e1a9065a379f0391ab"
+    },
+    {
+      "asset": "easy-sundae-observed.png",
+      "source": "E02-sundae-detail.png",
+      "sourceSha256": "2bec72150b8b055ebedf0e3fa6c5aed1bd4b6f66513539c5b6a010d0e4a0f5d8",
+      "crop": [
+        16,
+        235,
+        620,
+        839
+      ],
+      "size": [
+        604,
+        604
+      ],
+      "uiBackdropRepairs": [
+        [
+          506,
+          507,
+          594,
+          593
+        ],
+        [
+          18,
+          538,
+          128,
+          588
+        ]
+      ],
+      "cursorRepairSource": "E01-search.png",
+      "outputSha256": "d72dd34fa64e5c154d759767586a294b46b1f749c27621d8b1136fd2cd97986e"
+    },
+    {
+      "asset": "easy-pork-gukbap-observed.png",
+      "source": "E01-search.png",
+      "sourceSha256": "a87f9b1be70bfc6a869e17db44f55a4cd960ea237838eb73d3e24f4877af0006",
+      "crop": [
+        290,
+        650,
+        521,
+        881
+      ],
+      "size": [
+        231,
+        231
+      ],
+      "uiBackdropRepairs": [],
+      "cursorRepairSource": null,
+      "outputSha256": "bb5f2df3756247fa1c4994b4eac070549d7da3510e1dc686ad24e047eb025d60"
+    }
+  ]
+}
