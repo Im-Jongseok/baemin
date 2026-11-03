@@ -145,7 +145,9 @@ void main() {
     c.setImage(image);
     c.setConsent(true);
     await c.analyze();
+    c.editName('이름을 고친 음식');
     c.setPortion(.5);
+    expect(c.nutrition['calories'], 400);
     c.editNutrient('calories', '420');
     c.setPortion(1);
     expect(c.nutrition['calories'], 420);

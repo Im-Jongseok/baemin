@@ -167,7 +167,6 @@ class PhotoRecordController extends ChangeNotifier {
   void editName(String value) {
     if (busy || saved) return;
     name = value;
-    edited = analysis != null || edited;
     notifyListeners();
   }
 
@@ -185,11 +184,13 @@ class PhotoRecordController extends ChangeNotifier {
         : {
             'source': 'hf-estimate',
             'modelId': analysis!['modelId'],
+            'originalName': analysis!['name'],
             'basis': 'whole-photo',
             'wholePhotoNutrition': copy(obj(analysis!['nutrition'])),
             'ingredients': ingredients,
             'consumedFraction': portion,
-            'userEdited': edited,
+            'userEdited':
+                edited || name.trim() != analysis!['name'].toString().trim(),
           };
     store.recordPhoto(
       name: name,
