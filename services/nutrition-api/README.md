@@ -45,9 +45,9 @@ ANALYSIS_BASE_URL=http://<Mac-LAN-IP>:4182 ./tools/run-iphone.sh <기기ID>
 
 ```sh
 # 이 폴더 기준: 사진이 Hugging Face/선택 제공자로 전송됩니다.
-python3 -m nutrition_api.check --image /absolute/path/food.jpg --consent
+python3 -m nutrition_api.check --image /absolute/path/food.jpg --consent --max-output-tokens 256
 ```
 
-실패 시 `provider_billing`, `provider_auth`, `provider_access`, `provider_rate_limit`, `provider_timeout`, `invalid_result`, `not_food` 등의 코드와 안내를 반환합니다. 공급자의 원문 응답/토큰은 전달하지 않습니다. 분석 성공은 사진 속 전체 분량의 추정값(`basis: whole-photo`)이며 사용자가 먹은 양을 확인해야 합니다.
+실패 시 `provider_model`, `provider_billing`, `provider_auth`, `provider_access`, `provider_rate_limit`, `provider_timeout`, `invalid_result`, `not_food` 등의 코드와 안내를 반환합니다. 공급자의 원문 응답/토큰은 전달하지 않습니다. 분석 성공은 사진 속 전체 분량의 추정값(`basis: whole-photo`)이며 사용자가 먹은 양을 확인해야 합니다.
 
 사용 API: [Hugging Face image-text-to-text 공식 문서](https://huggingface.co/docs/inference-providers/tasks/image-text-to-text).

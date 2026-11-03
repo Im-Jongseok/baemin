@@ -8,7 +8,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from . import analysis as api
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_MODEL = 'Qwen/Qwen2.5-VL-7B-Instruct:featherless-ai'
+DEFAULT_MODEL = api.DEFAULT_MODEL
 ALLOWED_ORIGINS = ('http://localhost:4181', 'http://127.0.0.1:4181')
 
 

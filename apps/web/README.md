@@ -36,7 +36,7 @@ python3 server.py --port 4180
 ```sh
 read -s 'HF_TOKEN?Hugging Face token: '
 export HF_TOKEN
-export HF_MODEL_ID='Qwen/Qwen2.5-VL-7B-Instruct:featherless-ai'
+export HF_MODEL_ID='Qwen/Qwen3-VL-30B-A3B-Instruct:deepinfra'
 python3 server.py --port 4180
 ```
 

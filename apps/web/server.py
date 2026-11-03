@@ -7,7 +7,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'services/nutrition-api'))
-from nutrition_api.analysis import APIError, SAMPLES, analyze, normalize_result, validate_image
+from nutrition_api.analysis import APIError, DEFAULT_MODEL, SAMPLES, analyze, normalize_result, validate_image
 
 ROOT = Path(__file__).resolve().parent
 PUBLIC = {'/': 'index.html', '/index.html': 'index.html', '/app.mjs': 'app.mjs', '/domain.mjs': 'domain.mjs', '/supplier.mjs':'supplier.mjs', '/style.css': 'style.css', '/commerce.css':'commerce.css', '/catalog.mjs':'catalog.mjs', '/assets/food-grid.png':'assets/food-grid.png', '/assets/commerce-grid.png':'assets/commerce-grid.png'}
@@ -37,7 +37,7 @@ class Handler(BaseHTTPRequestHandler):
  def do_GET(self):
   path=self.path.split('?')[0]
   if path=='/api/config':
-   return self.respond(200,{'hfConfigured':bool(os.environ.get('HF_TOKEN')),'modelId':os.environ.get('HF_MODEL_ID','Qwen/Qwen2.5-VL-7B-Instruct:featherless-ai'),'baeminProvider':'fixture','samples':list(SAMPLES)})
+   return self.respond(200,{'hfConfigured':bool(os.environ.get('HF_TOKEN')),'modelId':os.environ.get('HF_MODEL_ID',DEFAULT_MODEL),'baeminProvider':'fixture','samples':list(SAMPLES)})
   if path not in PUBLIC:return self.respond(404,{'error':'찾을 수 없는 경로예요.'})
   file=ROOT/PUBLIC[path]
   types={'.html':'text/html; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.png':'image/png'}

@@ -23,6 +23,14 @@ class Tests(unittest.TestCase):
    return io.BytesIO(json.dumps({'choices':[{'message':{'content':'```json\n'+json.dumps(RESULT)+'\n```'}}]}).encode())
   r=analyze({'image':IMAGE,'mode':'huggingface','consent':True},token='TEST_ONLY',model='test/model:provider',opener=fake)
   self.assertEqual(r['source'],'hf-estimate');self.assertEqual(r['nutrition']['calories'],610)
+ def test_low_cost_probe_limit_is_sent_without_retry(self):
+  calls=[]
+  def fake(req,timeout):
+   body=json.loads(req.data);calls.append(body)
+   self.assertEqual(body['max_tokens'],256)
+   return io.BytesIO(json.dumps({'choices':[{'message':{'content':json.dumps(RESULT)}}]}).encode())
+  analyze({'image':IMAGE,'mode':'huggingface','consent':True},token='TEST_ONLY',opener=fake,max_output_tokens=256)
+  self.assertEqual(len(calls),1)
  def test_invalid_image_and_model_nutrients_are_not_accepted(self):
   for value in ('https://example.com/food.jpg','data:image/svg+xml;base64,AAAA',IMAGE.replace('iVBOR','AAAAA')):
    with self.assertRaises(APIError):validate_image(value)
@@ -38,13 +46,14 @@ class Tests(unittest.TestCase):
 class ProviderFailureTests(unittest.TestCase):
  def test_provider_errors_expose_actionable_codes_without_provider_body(self):
   import urllib.error
-  cases={401:'provider_auth',402:'provider_billing',403:'provider_access',429:'provider_rate_limit',503:'provider_unavailable'}
+  cases={400:'provider_model',401:'provider_auth',402:'provider_billing',403:'provider_access',404:'provider_model',429:'provider_rate_limit',503:'provider_unavailable'}
   for status,code in cases.items():
    def failed(req,timeout):
     raise urllib.error.HTTPError(req.full_url,status,'failure',{},io.BytesIO(b'PRIVATE_PROVIDER_RESPONSE'))
    with self.subTest(status=status),self.assertRaises(APIError) as caught:
     analyze({'image':IMAGE,'mode':'huggingface','consent':True},token='TEST_ONLY',opener=failed)
    self.assertEqual(caught.exception.code,code)
+   self.assertEqual(caught.exception.provider_status,status)
    self.assertNotIn('PRIVATE',caught.exception.message)
  def test_whole_photo_basis_and_not_food_are_explicit(self):
   self.assertEqual(normalize_result(RESULT)['basis'],'whole-photo')

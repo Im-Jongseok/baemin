@@ -79,7 +79,7 @@ POST /api/photo-analyze
   "nutrition": {"calories": 620, "carbs": 88, "protein": 21, "fat": 20},
   "ingredients": ["밥", "채소", "달걀"],
   "source": "hf-estimate",
-  "modelId": "Qwen/Qwen2.5-VL-7B-Instruct:featherless-ai",
+  "modelId": "Qwen/Qwen3-VL-30B-A3B-Instruct:deepinfra",
   "note": "사진과 조리법·분량에 따라 달라지는 추정값입니다. 먹은 양을 확인해 주세요."
 }
 ```
@@ -92,11 +92,11 @@ POST /api/photo-analyze
 
 | 후보 | 확인된 역할 | 이 구현에서의 위치 |
 | --- | --- | --- |
-| [Qwen2.5-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) | 이미지·텍스트를 받는 범용 VLM | 교체 가능한 기본 HF 호출 모델. 음식·분량·영양값은 추정이며 실제 음식 정확도 미평가 |
+| [Qwen3-VL-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct) | 이미지·텍스트를 받는 범용 VLM | 현재 기본 HF 호출 모델. deepinfra 경로로 사진 1장 실제 응답 확인. 음식별 영양 정확도 미평가 |
 | [nateraw/food](https://huggingface.co/nateraw/food) | Food-101 이미지 분류 | 음식 이름 후보용. 영양값·중량 출력을 직접 제공하는 모델로 쓰지 않음 |
 | [calorie-lens](https://huggingface.co/shalev396/calorie-lens) | 재료·중량·영양 추정 전용 모델 | 별도 배포/어댑터 평가 후보. 현재 실행 버전에 설치·실행하지 않음 |
 
-2026-10-26 Hub metadata 조회에서 Qwen2.5-VL-7B의 featherless-ai 매핑이 live, calorie-lens는 공급자 매핑 없음으로 나타났다. 메타데이터는 계정별 호출 성공이나 이미지 입력 성공을 증명하지 않는다. 토큰을 설정한 뒤 실제 요청으로 확인해야 한다.
+2026-10-26 Hub metadata 조회에서 Qwen2.5-VL-7B의 featherless-ai 매핑이 live였지만 2026-11-04 실제 요청은 HTTP 400 `model_not_deployed`로 거절됐다. 라우터의 제공 모델 목록에서 이미지 입력을 확인한 새 경로로 교체해 HTTP 200과 영양 JSON 검증 성공을 확인했다. 메타데이터만으로 실제 호출 성공을 판단하지 않는다.
 
 [HF 이미지·텍스트 API 문서](https://huggingface.co/docs/inference-providers/tasks/image-text-to-text), [Chat Completion 명세](https://huggingface.co/docs/inference-providers/tasks/chat-completion)를 기준으로 서버 어댑터를 작성했다. 특정 모델이 음식 영양을 정확히 측정한다고 가정하지 않는다.
 
