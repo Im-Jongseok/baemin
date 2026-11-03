@@ -83,10 +83,10 @@ class _MyBaeminScreenState extends State<MyBaeminScreen> {
           child: txt('ⓘ 배민의 음식주문 경험, 어떠셨나요?', size: 11, color: muted),
         ),
       ),
-      gap(25),
-      Center(child: assetIcon('profile-mascot', size: 115)),
+      gap(16),
+      Center(child: assetIcon('profile-mascot', size: 96)),
       gap(),
-      Center(child: txt('민수', size: 22, weight: FontWeight.w800)),
+      Center(child: txt('민수', size: 20, weight: FontWeight.w800)),
       WalkingCard(store: s, sync: widget.walking, onPickup: widget.onPickup),
       panel(
         Column(
@@ -109,7 +109,7 @@ class _MyBaeminScreenState extends State<MyBaeminScreen> {
                 child: txt(
                   '받은 쿠폰을 한곳에서 확인해요',
                   size: 12,
-                  color: const Color(0xffb9fff4),
+                  color: Colors.white,
                   weight: FontWeight.w700,
                 ),
               ),

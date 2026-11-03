@@ -1,3 +1,5 @@
+import 'package:baemin_flutter/app/app_theme.dart';
+
 import 'support/fixtures.dart';
 
 import 'dart:io';
@@ -309,7 +311,7 @@ void main() {
           key: boundary,
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            theme: ThemeData(fontFamily: 'NotoSansKR'),
+            theme: buildAppTheme(),
             home: Scaffold(
               body: Live(
                 store: s,
@@ -385,7 +387,7 @@ void main() {
         key: boundary,
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(fontFamily: 'NotoSansKR'),
+          theme: buildAppTheme(),
           home: FoodCategoryScreen(store: s, initialCategory: '패스트푸드'),
         ),
       ),
@@ -431,7 +433,7 @@ void main() {
           key: boundary,
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            theme: ThemeData(fontFamily: 'NotoSansKR'),
+            theme: buildAppTheme(),
             home: FoodCategoryScreen(
               store: s,
               initialCategory: '치킨',

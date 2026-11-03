@@ -209,6 +209,14 @@ class _FoodCategoryState extends State<FoodCategoryScreen> {
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide.none,
                   ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide.none,
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(color: primary, width: 1),
+                  ),
                 ),
               ),
             ),
@@ -251,12 +259,20 @@ class _FoodCategoryState extends State<FoodCategoryScreen> {
                     ),
                   ),
                   FilterChip(
-                    label: txt('영업 중', size: 12),
+                    label: txt(
+                      '영업 중',
+                      size: 12,
+                      color: openOnly ? Colors.white : ink,
+                    ),
                     selected: openOnly,
                     onSelected: (v) => setState(() => openOnly = v),
                   ),
                   FilterChip(
-                    label: txt('별점 4.9+', size: 12),
+                    label: txt(
+                      '별점 4.9+',
+                      size: 12,
+                      color: highlyRated ? Colors.white : ink,
+                    ),
                     selected: highlyRated,
                     onSelected: (v) => setState(() => highlyRated = v),
                   ),

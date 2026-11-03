@@ -48,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
         store: s,
         onCart: () => openCart(context, s),
         title: '우리집',
+        background: const Color(0xffe8fbf6),
         search: search,
         hint: '덮밥? 볶음밥?',
         onSearch: (v) => setState(() => query = v),
@@ -104,6 +105,12 @@ class _HomeScreenState extends State<HomeScreen> {
           children: ['음식배달', '픽업', '장보기·쇼핑', '선물하기', '혜택모아보기']
               .map(
                 (label) => TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: ink,
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    shape: const RoundedRectangleBorder(),
+                    minimumSize: const Size(0, 48),
+                  ),
                   onPressed: () {
                     if (label == '픽업') {
                       pickupStores();
@@ -117,7 +124,24 @@ class _HomeScreenState extends State<HomeScreen> {
                       openFoodCategory(context, s, '전체');
                     }
                   },
-                  child: txt(label, size: 15, weight: FontWeight.w700),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 13),
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(
+                          color: label == '음식배달' ? ink : Colors.transparent,
+                          width: 3,
+                        ),
+                      ),
+                    ),
+                    child: txt(
+                      label,
+                      size: 15,
+                      weight: label == '음식배달'
+                          ? FontWeight.w800
+                          : FontWeight.w500,
+                    ),
+                  ),
                 ),
               )
               .toList(),

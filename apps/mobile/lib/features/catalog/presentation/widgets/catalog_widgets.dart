@@ -41,7 +41,12 @@ class MarketLogos extends StatelessWidget {
                             color: const Color(0xff228335),
                             weight: FontWeight.w800,
                           )
-                        : const Icon(Icons.apple, color: Colors.red, size: 36),
+                        : const FoodImage(
+                            {'kind': 'apple'},
+                            width: 58,
+                            height: 58,
+                            radius: 29,
+                          ),
                   ),
                 gap(6),
                 txt(titles[i], size: 11, weight: FontWeight.w500),
@@ -198,7 +203,7 @@ class ShopRow extends StatelessWidget {
                     weight: FontWeight.w700,
                   ),
                   txt(
-                    '최소주문 ${won(shop['minOrder'])} · 픽업가능',
+                    '${numOf(shop['minOrder']) > 0 ? '최소주문 ${won(shop['minOrder'])} · ' : ''}픽업가능',
                     size: 11,
                     color: muted,
                   ),

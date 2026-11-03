@@ -59,16 +59,48 @@ class TabHeader extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: txt(
-                title,
-                size: search == null ? 22 : 18,
-                weight: FontWeight.w800,
+              child: Row(
+                children: [
+                  txt(
+                    title,
+                    size: search == null ? 22 : 18,
+                    weight: FontWeight.w800,
+                  ),
+                  if (search != null)
+                    const Icon(Icons.keyboard_arrow_down, size: 18),
+                ],
               ),
             ),
             ...?actions,
             if (actions == null) ...[
               if (search != null) ...[
-                pill('배민클럽', color: Colors.white, bg: ink),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 5,
+                    vertical: 2,
+                  ),
+                  decoration: BoxDecoration(
+                    color: ink,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      txt(
+                        '배민클럽',
+                        size: 10,
+                        color: Colors.white,
+                        weight: FontWeight.w800,
+                      ),
+                      const SizedBox(width: 2),
+                      const Icon(
+                        Icons.auto_awesome,
+                        size: 11,
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                ),
                 IconButton(
                   onPressed: () =>
                       sheet(context, '알림', txt('새로운 알림이 없어요.', color: muted)),
@@ -103,9 +135,15 @@ class TabHeader extends StatelessWidget {
                   child: assetIcon('search'),
                 ),
                 contentPadding: const EdgeInsets.symmetric(horizontal: 16),
-                border: OutlineInputBorder(
+                filled: true,
+                fillColor: Colors.white,
+                enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(25),
-                  borderSide: const BorderSide(color: ink),
+                  borderSide: const BorderSide(color: ink, width: .8),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(25),
+                  borderSide: const BorderSide(color: ink, width: 1.2),
                 ),
               ),
             ),

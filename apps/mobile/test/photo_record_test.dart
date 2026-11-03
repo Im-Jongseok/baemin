@@ -1,3 +1,5 @@
+import 'package:baemin_flutter/app/app_theme.dart';
+
 import 'dart:ui' as ui;
 
 import 'package:flutter/rendering.dart';
@@ -201,14 +203,7 @@ void main() {
       addTearDown(c.dispose);
       await tester.pumpWidget(
         MaterialApp(
-          theme: ThemeData(
-            fontFamily: 'NotoSansKR',
-            colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color(0xff00d2b8),
-              primary: const Color(0xff007f72),
-              surface: Colors.white,
-            ),
-          ),
+          theme: buildAppTheme(),
           home: Builder(
             builder: (context) => Scaffold(
               body: TextButton(
