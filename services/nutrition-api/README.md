@@ -38,3 +38,16 @@ ANALYSIS_BASE_URL=http://<Mac-LAN-IP>:4182 ./tools/run-iphone.sh <기기ID>
 ```
 
 `--env-file`로 다른 설정 파일도 지정할 수 있습니다. 웹 목업은 같은 `analysis.py`를 가져와 기존 4180의 API 계약을 유지합니다. Flutter 서버가 웹 소스 파일을 동적으로 불러오는 의존 관계는 제거했습니다.
+
+## 실제 분석 확인
+
+설정 조회는 토큰 유무만 확인하며 모델 이용 가능 여부나 과금 한도는 보증하지 않습니다. 직접 준비한 사진을 외부 모델로 보내려면 명시적으로 실행합니다.
+
+```sh
+# 이 폴더 기준: 사진이 Hugging Face/선택 제공자로 전송됩니다.
+python3 -m nutrition_api.check --image /absolute/path/food.jpg --consent
+```
+
+실패 시 `provider_billing`, `provider_auth`, `provider_access`, `provider_rate_limit`, `provider_timeout`, `invalid_result`, `not_food` 등의 코드와 안내를 반환합니다. 공급자의 원문 응답/토큰은 전달하지 않습니다. 분석 성공은 사진 속 전체 분량의 추정값(`basis: whole-photo`)이며 사용자가 먹은 양을 확인해야 합니다.
+
+사용 API: [Hugging Face image-text-to-text 공식 문서](https://huggingface.co/docs/inference-providers/tasks/image-text-to-text).

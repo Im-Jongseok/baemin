@@ -21,9 +21,13 @@
 
 ## Flutter 내부
 
-기능은 `catalog`, `orders`, `nutrition`, `food_record`, `walking`으로 나눈다. 각 기능의 화면은 `presentation`에 둔다. 공통 상태는 기존 `AppStore`를 `core/state`에 유지한다. 실제 서버 저장·계정 동기화가 없는 현재 프로토타입에 비어 있는 repository/use-case 계층을 만들지는 않는다.
+기능은 `home`, `shopping`, `favorites`, `orders`, `profile`, `catalog`, `nutrition`, `food_record`, `walking`으로 나눈다. 각 기능의 화면은 `presentation`에 둔다. 공통 상태는 기존 `AppStore`를 `core/state`에 유지한다. 실제 서버 저장·계정 동기화가 없는 현재 프로토타입에 비어 있는 repository/use-case 계층을 만들지는 않는다.
 
-`app/home_shell.dart`에는 현재 최상위 탭 구성과 홈·장보기·캘린더·마이배민 조합이 남아 있다. 주문·추천·촬영·만보기는 별도 기능 모듈이다. 이 분리는 실행 단위와 기능 소유 경계를 명확히 한 것이며, 각 기능의 상태까지 모두 분해한 완성형 상용 아키텍처를 뜻하지 않는다.
+`app/home_shell.dart`는 하단 탭 이동, 장보기 진입 요청, 공통 만보기 센서의 시작·종료만 맡는다. 다섯 탭은 독립된 StatefulWidget이며 IndexedStack으로 검색·서비스 필터·스크롤 수명을 관리한다. 홈과 장보기의 검색은 탭을 떠날 때 초기화하고, 찜과 주문내역의 배달/장보기 선택은 서로 독립적이다.
+
+캘린더는 `orders/presentation/widgets/meal_calendar.dart`, 직접 먹은 음식 카드는 `recorded_food_card.dart`로 분리했다. 홈/장보기에서 사용하는 상품 그리드·브랜드 아이콘·가게 행은 `catalog/presentation/widgets`에 둔다. 헤더·서비스 탭·스크롤 틀은 `shared/widgets/tab_page.dart`에서 콜백을 받아 사용하며 기능 화면을 직접 가져오지 않는다.
+
+사진 등록은 `food_record/application/photo_record_controller.dart`가 분석 요청 상태·오래된 응답 무시·섭취량·편집·저장을 관리하고 `presentation/photo_screen.dart`는 입력과 화면 이동을 맡는다. 전역 주문/기록 상태는 기존 AppStore를 유지한다.
 
 플랫폼 권한·Live Activity 코드는 Flutter 관례에 따라 `ios/`에 유지한다. 번들 데이터·이미지·폰트는 앱 `assets/`, 카탈로그 편집 원본은 `data/`, 앱 테스트는 `test/`, 변경 근거는 `qa/`에 둔다.
 

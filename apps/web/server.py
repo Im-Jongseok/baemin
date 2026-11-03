@@ -53,7 +53,7 @@ class Handler(BaseHTTPRequestHandler):
    payload=json.loads(self.rfile.read(length))
    if not isinstance(payload,dict): raise APIError('요청 형식을 확인해 주세요.')
    self.respond(200,analyze(payload))
-  except APIError as error:self.respond(error.status,{'error':error.message})
+  except APIError as error:self.respond(error.status,{'error':error.message,'code':error.code})
   except (ValueError,UnicodeError):self.respond(400,{'error':'요청을 읽을 수 없어요.'})
   except Exception:self.respond(500,{'error':'분석 중 문제가 생겼어요. 다시 시도해 주세요.'})
 

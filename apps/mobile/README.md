@@ -88,12 +88,14 @@ localStorage.getItem('baemin-order-calendar-mock-v1')
 ## 파일과 검증
 
 - `lib/main.dart`: 초기화·앱 실행
-- `lib/app/`: 테마·최상위 탐색과 탭 구성
+- `lib/app/`: 테마·최상위 탭 이동·공통 만보기 수명 관리
+- `lib/features/home`, `shopping`, `favorites`, `profile`: 홈·장보기·찜·마이배민 독립 화면
 - `lib/core/state/app_store.dart`: 주문/쿠폰/포인트/기록/저장/영양 구성 계산
 - `lib/core/network/analysis_service.dart`: 분석 API 계약
 - `lib/features/catalog/presentation/`: 가게 목록·검색·필터
 - `lib/features/orders/presentation/`: 가게·상품·주문/리뷰 화면
 - `lib/features/nutrition/presentation/`: 리포트·추천·직접 만들기·레시피
+- `lib/features/food_record/application/`: 분석 요청·섭취량·편집·저장 상태
 - `lib/features/food_record/presentation/`: 음식 촬영·등록
 - `lib/features/walking/presentation/`: 만보기 화면·iOS 이벤트 연동
 - `lib/shared/widgets/`: 공통 UI·이미지·다이얼로그
@@ -113,3 +115,7 @@ localStorage.getItem('baemin-order-calendar-mock-v1')
 
 - 번들 데이터는 `assets/seed.json`, 원본 웹과 다른 추가·보정값은 `data/catalog-updates.json`에서 관리한다. `tools/export_web_seed.mjs`는 두 내용을 병합한다.
 - 현재 원격 카탈로그 서버는 없다. 메뉴 추가·영양값 수정도 웹 재빌드 또는 iOS 재빌드·재설치가 필요하다. 세부 제공량·출처·기존 기록 보존 기준은 [영양값·가게 추가 검증](qa/NUTRITION-CATALOG-2026-10-29.md)에 기록했다.
+
+## 화면 분리·사진 분석 후속
+
+분석 성공 후 사진 속 음식 전체를 기준으로 25/50/75/100% 섭취량을 선택하고 영양값을 수정할 수 있습니다. 저장 기록은 원본 분석값·모델·섭취 비율·수정 여부를 보존합니다. 사진을 바꾸면 이전 값과 전송 동의를 초기화하고, 오래된 분석 응답은 무시합니다. 실제 HF 계정 한도와 코드 검증은 [후속 검증 기록](qa/SCREENS-PHOTO-2026-11-04.md)에 구분했습니다.

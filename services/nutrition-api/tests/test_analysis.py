@@ -34,4 +34,22 @@ class Tests(unittest.TestCase):
   def fake(req,timeout):return io.BytesIO(b'{"choices": [{"message":{"content":"not json"}}]}')
   with self.assertRaises(APIError):analyze({'image':IMAGE,'mode':'huggingface','consent':True},token='TEST_ONLY',opener=fake)
 
+
+class ProviderFailureTests(unittest.TestCase):
+ def test_provider_errors_expose_actionable_codes_without_provider_body(self):
+  import urllib.error
+  cases={401:'provider_auth',402:'provider_billing',403:'provider_access',429:'provider_rate_limit',503:'provider_unavailable'}
+  for status,code in cases.items():
+   def failed(req,timeout):
+    raise urllib.error.HTTPError(req.full_url,status,'failure',{},io.BytesIO(b'PRIVATE_PROVIDER_RESPONSE'))
+   with self.subTest(status=status),self.assertRaises(APIError) as caught:
+    analyze({'image':IMAGE,'mode':'huggingface','consent':True},token='TEST_ONLY',opener=failed)
+   self.assertEqual(caught.exception.code,code)
+   self.assertNotIn('PRIVATE',caught.exception.message)
+ def test_whole_photo_basis_and_not_food_are_explicit(self):
+  self.assertEqual(normalize_result(RESULT)['basis'],'whole-photo')
+  with self.assertRaises(APIError) as caught:
+   normalize_result({'is_food':False})
+  self.assertEqual(caught.exception.code,'not_food')
+
 if __name__=='__main__':unittest.main()

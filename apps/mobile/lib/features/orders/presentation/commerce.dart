@@ -1193,6 +1193,23 @@ Future<void> recordedMealSheet(BuildContext context, Json record) => sheet(
         '탄수화물 ${decimal(numOf(record['nutrition']['carbs']))}g · 단백질 ${decimal(numOf(record['nutrition']['protein']))}g · 지방 ${decimal(numOf(record['nutrition']['fat']))}g',
         size: 13,
       ),
+      if (record['analysis'] is Map) ...[
+        gap(12),
+        pill(
+          record['analysis']['userEdited'] == true ? '사진 분석 후 수정' : '사진 분석 추정값',
+        ),
+        txt(
+          '사진 속 음식의 ${decimal(numOf(record['analysis']['consumedFraction']) * 100)}% 기준',
+          size: 12,
+          color: muted,
+        ),
+        if ((record['analysis']['ingredients'] as List? ?? []).isNotEmpty)
+          txt(
+            (record['analysis']['ingredients'] as List).join(' · '),
+            size: 12,
+            color: muted,
+          ),
+      ],
       if (record['portion'] != null)
         txt(
           '주문 음식의 ${decimal(numOf(record['portion']) * 100)}% 확인',

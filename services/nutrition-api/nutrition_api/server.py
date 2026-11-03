@@ -76,6 +76,9 @@ class Bridge(BaseHTTPRequestHandler):
         if self.path != '/api/photo-analyze':
             self.respond(404, {'error': '찾을 수 없는 경로예요.'})
             return
+        if not self.headers.get('Content-Type', '').startswith('application/json'):
+            self.respond(415, {'error': 'JSON 요청이 필요해요.', 'code': 'invalid_request'})
+            return
         try:
             size = int(self.headers.get('Content-Length', 0))
         except ValueError:
@@ -94,11 +97,11 @@ class Bridge(BaseHTTPRequestHandler):
         try:
             c = config(self.server.env_file)
             if payload.get('mode') == 'huggingface' and not c['token']:
-                self.respond(503, {'error': '사진 분석 서버에 Hugging Face 연결이 아직 설정되지 않았어요. 음식 종류 선택·직접 입력을 이용해 주세요.'})
+                self.respond(503, {'error': '사진 분석 서버에 Hugging Face 연결이 아직 설정되지 않았어요. 음식 종류 선택·직접 입력을 이용해 주세요.', 'code': 'not_configured'})
                 return
             self.respond(200, api.analyze(payload, token=c['token'], model=c['model']))
         except api.APIError as error:
-            self.respond(error.status, {'error': error.message})
+            self.respond(error.status, {'error': error.message, 'code': error.code})
         except Exception:
             self.respond(500, {'error': '분석 중 문제가 생겼어요. 다시 시도해 주세요.'})
 

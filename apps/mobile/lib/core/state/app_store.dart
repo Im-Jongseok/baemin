@@ -697,6 +697,7 @@ class AppStore extends ChangeNotifier {
     required Json nutrition,
     String? image,
     String source = 'manual',
+    Json? analysis,
   }) {
     if (name.trim().isEmpty || !validN(nutrition)) {
       throw StateError('음식 이름과 영양값을 확인해 주세요.');
@@ -714,6 +715,7 @@ class AppStore extends ChangeNotifier {
         'image': image,
         'confirmed': true,
         'source': source,
+        if (analysis != null) 'analysis': copy(analysis),
       },
     ];
     save();

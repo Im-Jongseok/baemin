@@ -76,6 +76,14 @@ class BridgeTests(unittest.TestCase):
         self.assertEqual((code,body),(200,expected))
         self.assertEqual(analyze.call_args.kwargs['token'],'hf_FAKE_TEST_ONLY')
 
+    def test_provider_billing_code_reaches_client_without_fake_nutrition(self):
+        self.env.write_text('HF_TOKEN=hf_FAKE_TEST_ONLY\n')
+        with patch.object(bridge.api, 'analyze', side_effect=bridge.api.APIError('한도를 확인해 주세요.', 502, 'provider_billing')):
+            code, body, _ = self.request('/api/photo-analyze', {'image': self.photo, 'mode': 'huggingface', 'consent': True})
+        self.assertEqual(code, 502)
+        self.assertEqual(body['code'], 'provider_billing')
+        self.assertNotIn('nutrition', body)
+
     def test_only_api_paths_and_allowed_browser_origins(self):
         self.assertEqual(self.request('/.env')[0],404)
         self.assertEqual(self.request('/api/config',headers={'Origin':'https://unrelated.example'})[0],403)

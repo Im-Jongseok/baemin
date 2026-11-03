@@ -10,6 +10,19 @@ const analysisBase = String.fromEnvironment(
   defaultValue: 'http://127.0.0.1:4182',
 );
 
+Json _readResponse(http.Response response) {
+  final value = jsonDecode(utf8.decode(response.bodyBytes));
+  if (value is! Map<String, dynamic>) {
+    throw const FormatException('Expected a JSON object');
+  }
+  return value;
+}
+
+class PhotoAnalysisException extends StateError {
+  PhotoAnalysisException(super.message, {this.code});
+  final String? code;
+}
+
 Future<Json> analyzeFoodPhoto(
   String image, {
   required bool consent,
@@ -34,13 +47,16 @@ Future<Json> analyzeFoodPhoto(
           }),
         )
         .timeout(const Duration(seconds: 65));
-    final data = obj(jsonDecode(utf8.decode(response.bodyBytes)));
+    final data = _readResponse(response);
     if (response.statusCode != 200 ||
         !validN(data['nutrition']) ||
         data['name'] is! String ||
         (data['name'] as String).trim().isEmpty ||
         data['source'] != 'hf-estimate') {
-      throw StateError(data['error'] ?? '분석 결과를 확인하지 못했어요.');
+      throw PhotoAnalysisException(
+        data['error'] is String ? data['error'] : '분석 결과를 확인하지 못했어요.',
+        code: data['code'] is String ? data['code'] : null,
+      );
     }
     return data;
   } on TimeoutException {
@@ -64,7 +80,7 @@ Future<Json> analysisConnection({http.Client? client}) async {
     final response = await transport
         .get(Uri.parse('$analysisBase/api/config'))
         .timeout(const Duration(seconds: 10));
-    final data = obj(jsonDecode(utf8.decode(response.bodyBytes)));
+    final data = _readResponse(response);
     if (response.statusCode != 200 || data['hfConfigured'] is! bool) {
       throw StateError('사진 분석 서버의 설정을 확인할 수 없어요.');
     }

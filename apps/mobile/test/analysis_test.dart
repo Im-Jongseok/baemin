@@ -114,4 +114,43 @@ void main() {
       ),
     );
   });
+  test('provider billing failures preserve an actionable code', () async {
+    await expectLater(
+      analyzeFoodPhoto(
+        image,
+        consent: true,
+        client: MockClient(
+          (_) async => http.Response.bytes(
+            utf8.encode('{"error":"한도 확인","code":"provider_billing"}'),
+            502,
+          ),
+        ),
+      ),
+      throwsA(
+        isA<PhotoAnalysisException>().having(
+          (e) => e.code,
+          'code',
+          'provider_billing',
+        ),
+      ),
+    );
+  });
+  test('non-object responses become readable errors instead of uncaught type errors', () async {
+    for (final body in ['[]', 'null', 'true']) {
+      await expectLater(
+        analysisConnection(
+          client: MockClient((_) async => http.Response(body, 200)),
+        ),
+        throwsStateError,
+      );
+      await expectLater(
+        analyzeFoodPhoto(
+          image,
+          consent: true,
+          client: MockClient((_) async => http.Response(body, 200)),
+        ),
+        throwsStateError,
+      );
+    }
+  });
 }
