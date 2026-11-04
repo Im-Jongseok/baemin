@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "status": "GPT and Qwen compared; Claude pending quota reset",
+  "status": "Three-photo comparison completed; nutrient ground truth unavailable",
   "versions": {
     "codex": "0.163.0",
     "claude": "2.1.317"
@@ -94,10 +94,87 @@
       ],
       "claude": {
         "modelRequested": "claude-haiku-5-5",
+        "modelReported": "claude-haiku-5-5",
+        "canonicalModel": "claude-haiku-5-5",
         "transport": "Claude Code Pro subscription",
-        "status": "quota_blocked",
-        "resetDisplayed": "2026-11-04 10:30 Asia/Seoul",
-        "result": null
+        "status": "success",
+        "reasoningEffort": "low",
+        "result": {
+          "is_food": true,
+          "name": "치즈버거",
+          "ingredients": [
+            "햄버거 번",
+            "소고기 패티",
+            "체다 치즈",
+            "양상추",
+            "토마토",
+            "빨간 양파",
+            "피클",
+            "케첩"
+          ],
+          "nutrition": {
+            "calories": 550,
+            "carbs": 42,
+            "protein": 30,
+            "fat": 28
+          }
+        },
+        "schemaValidated": true,
+        "elapsedSeconds": 7.17,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 918,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 116,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 918,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "global",
+          "iterations": [
+            {
+              "input_tokens": 2,
+              "output_tokens": 116,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 918,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 918
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard",
+          "fallback_credit": null
+        },
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 116,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 918,
+            "webSearchRequests": 0,
+            "costUSD": 0.00024180000000000002,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 918,
+            "canonicalModel": "claude-haiku-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "cliListCostEstimateUsd": 0.00024180000000000002,
+        "billedApiCostUsd": null
       }
     },
     {
@@ -190,10 +267,92 @@
       ],
       "claude": {
         "modelRequested": "claude-haiku-5-5",
+        "modelReported": "claude-haiku-5-5",
+        "canonicalModel": "claude-haiku-5-5",
         "transport": "Claude Code Pro subscription",
-        "status": "not_run_after_quota_block",
-        "resetDisplayed": "2026-11-04 10:30 Asia/Seoul",
-        "result": null
+        "status": "success",
+        "reasoningEffort": "low",
+        "result": {
+          "is_food": true,
+          "name": "비빔밥",
+          "ingredients": [
+            "밥",
+            "소고기 불고기",
+            "달걀프라이",
+            "고추장",
+            "당근 채",
+            "무나물",
+            "시금치나물",
+            "숙주나물",
+            "옥수수",
+            "버섯볶음",
+            "오이채",
+            "참기름",
+            "참깨"
+          ],
+          "nutrition": {
+            "calories": 780,
+            "carbs": 105,
+            "protein": 38,
+            "fat": 22
+          }
+        },
+        "schemaValidated": true,
+        "elapsedSeconds": 3.45,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 1303,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 145,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1303,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "global",
+          "iterations": [
+            {
+              "input_tokens": 2,
+              "output_tokens": 145,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 1303,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1303
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard",
+          "fallback_credit": null
+        },
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 145,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 1303,
+            "webSearchRequests": 0,
+            "costUSD": 0.0003333,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 1303,
+            "canonicalModel": "claude-haiku-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "cliListCostEstimateUsd": 0.0003333,
+        "billedApiCostUsd": null
       }
     },
     {
@@ -285,10 +444,91 @@
       ],
       "claude": {
         "modelRequested": "claude-haiku-5-5",
+        "modelReported": "claude-haiku-5-5",
+        "canonicalModel": "claude-haiku-5-5",
         "transport": "Claude Code Pro subscription",
-        "status": "not_run_after_quota_block",
-        "resetDisplayed": "2026-11-04 10:30 Asia/Seoul",
-        "result": null
+        "status": "success",
+        "reasoningEffort": "low",
+        "result": {
+          "is_food": true,
+          "name": "연어 포케 덮밥",
+          "ingredients": [
+            "백미밥",
+            "생연어",
+            "아보카도",
+            "적양배추 채",
+            "믹스 샐러드 채소",
+            "오이",
+            "무 채",
+            "날치알(토비코)",
+            "김 가루",
+            "쪽파",
+            "참깨",
+            "간장 양념"
+          ],
+          "nutrition": {
+            "calories": 680,
+            "carbs": 75,
+            "protein": 36,
+            "fat": 24
+          }
+        },
+        "schemaValidated": true,
+        "elapsedSeconds": 3.99,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 1303,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 151,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1303,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "global",
+          "iterations": [
+            {
+              "input_tokens": 2,
+              "output_tokens": 151,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 1303,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1303
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard",
+          "fallback_credit": null
+        },
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 151,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 1303,
+            "webSearchRequests": 0,
+            "costUSD": 0.0003363,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 1303,
+            "canonicalModel": "claude-haiku-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "cliListCostEstimateUsd": 0.0003363,
+        "billedApiCostUsd": null
       }
     }
   ],
@@ -299,6 +539,13 @@
     "scheduledFor": "2026-11-04T10:30:00+09:00",
     "mode": "one-time thread heartbeat",
     "automationId": "claude",
-    "onlyClaudeRuns": true
-  }
+    "onlyClaudeRuns": true,
+    "status": "completed",
+    "completedAt": "2026-11-04T03:17:03.869250+00:00",
+    "successfulCalls": 3,
+    "additionalHfCalls": 0,
+    "additionalGptCalls": 0
+  },
+  "claudeCliListCostEstimateUsd": 0.0009114,
+  "claudeCostNote": "CLI list-price estimate including cache writes, not verified billed cost; subscription authentication."
 }
